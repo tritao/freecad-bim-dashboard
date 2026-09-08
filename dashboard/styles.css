@@ -45,6 +45,9 @@ a { color: inherit; }
   background: var(--card);
 }
 
+.entity-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.entity-tabs button { padding: 10px 18px; font-weight: 700; }
+
 .summary > div { display: flex; flex-direction: column; padding: 20px 24px; border-right: 1px solid var(--line); }
 .summary strong { font-size: 1.8rem; line-height: 1; }
 .summary span, .summary p { color: var(--muted); }
@@ -68,6 +71,8 @@ input { width: min(330px, 42vw); padding: 8px 12px; }
 .badges span, .labels span { border-radius: 99px; padding: 3px 9px; background: #eef1ee; font-size: .76rem; font-weight: 650; }
 .priority-high { background: var(--orange-pale) !important; color: var(--orange); }
 .priority-normal, .priority-watch { background: var(--green-pale) !important; color: var(--green); }
+.priority-confirmed { background: #e7e7fb !important; color: #4d45a5; }
+.signal { background: #eef1ee !important; color: var(--muted); }
 .labels { margin-top: 14px; }
 .labels span { color: var(--muted); font-weight: 500; }
 dl { min-width: 225px; margin: 0; padding-left: 24px; border-left: 1px solid var(--line); }

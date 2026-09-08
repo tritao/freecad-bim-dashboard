@@ -83,9 +83,30 @@ class DashboardTest(unittest.TestCase):
                 [item], "FreeCAD/FreeCAD", "Mod: BIM", ["tritao", "Roy-043"], now
             )
         )
-        self.assertEqual(report["schema_version"], 1)
+        self.assertEqual(report["schema_version"], 2)
         self.assertEqual(report["repository"], "FreeCAD/FreeCAD")
         self.assertEqual(report["items"][0]["number"], 42)
+
+    def test_issue_reproducer_hint_requires_populated_steps(self):
+        self.assertFalse(dashboard.issue_has_reproducer("### Steps to reproduce\n\nn/a\n\n### Expected"))
+        self.assertTrue(
+            dashboard.issue_has_reproducer(
+                "### Steps to reproduce\n\n1. Create a wall\n2. Change its width\n\n### Expected"
+            )
+        )
+
+    def test_confirmed_issue_is_ready_to_investigate(self):
+        labels = {"Mod: BIM", "Status: Confirmed"}
+        self.assertEqual(dashboard.issue_priority(labels, "Wall fails", 3), "Confirmed")
+        self.assertEqual(
+            dashboard.issue_next_action(labels, False, True, 3), "Ready to investigate"
+        )
+
+    def test_old_issue_is_a_stale_candidate(self):
+        self.assertEqual(dashboard.issue_priority({"Mod: BIM"}, "Old request", 200), "Stale candidate")
+        self.assertEqual(
+            dashboard.issue_next_action({"Mod: BIM"}, False, True, 200), "Recheck or close"
+        )
 
 
 if __name__ == "__main__":

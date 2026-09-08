@@ -27,7 +27,7 @@ jobs:
       - name: Generate current queue
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/collect.py --format json --output dashboard/data/prs.json
+        run: python3 scripts/collect.py --format json --output dashboard/data/dashboard.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

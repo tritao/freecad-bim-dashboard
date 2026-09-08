@@ -21,4 +21,4 @@ jobs:
       - name: Validate browser JavaScript
         run: node --check dashboard/app.js
       - name: Validate sample data
-        run: python3 -m json.tool dashboard/data/prs.json >/dev/null
+        run: python3 -m json.tool dashboard/data/dashboard.json >/dev/null

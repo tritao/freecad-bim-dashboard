@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Report open FreeCAD BIM pull requests that still need selected reviewers."""
+"""Collect open FreeCAD BIM pull requests and issues for the maintenance dashboard."""
 
 from __future__ import annotations
 
@@ -40,6 +40,18 @@ def fetch_pages(endpoint: str) -> list[dict[str, Any]]:
     return [item for page in pages for item in page]
 
 
+def search_issues(query: str) -> list[dict[str, Any]]:
+    """Fetch and flatten all pages from GitHub's issue search endpoint."""
+    pages = run_gh(
+        [
+            "api", "--method", "GET", "--paginate", "--slurp", "search/issues",
+            "-f", f"q={query}", "-f", "sort=updated", "-f", "order=desc",
+            "-f", "per_page=100",
+        ]
+    )
+    return [item for page in pages for item in page["items"]]
+
+
 def fetch_pull_requests(
     repository: str, label: str, reviewers: list[str]
 ) -> list[dict[str, Any]]:
@@ -47,9 +59,7 @@ def fetch_pull_requests(
     search = f'repo:{repository} is:pr is:open label:"{label}"'
     for reviewer in reviewers:
         search += f" -author:{reviewer} -commenter:{reviewer} -reviewed-by:{reviewer}"
-    results = run_gh(
-        ["api", "--method", "GET", "search/issues", "-f", f"q={search}", "-f", "per_page=100"]
-    )["items"]
+    results = search_issues(search)
     pull_requests = []
     for result in results:
         number = result["number"]
@@ -87,6 +97,11 @@ def fetch_pull_requests(
             }
         )
     return pull_requests
+
+
+def fetch_issues(repository: str, label: str) -> list[dict[str, Any]]:
+    """Fetch all open issues carrying the requested label."""
+    return search_issues(f'repo:{repository} is:issue is:open label:"{label}"')
 
 
 def fetch_changed_files(repository: str, number: int) -> list[dict[str, str]]:
@@ -167,6 +182,64 @@ def normalize(pr: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
     }
 
 
+def issue_has_reproducer(body: str) -> bool:
+    """Return a conservative hint based on a populated reproduction section."""
+    marker = "### Steps to reproduce"
+    if marker not in body:
+        return False
+    steps = body.split(marker, 1)[1].split("###", 1)[0].strip().casefold()
+    return bool(steps and steps not in {"n/a", "none", "not applicable"})
+
+
+def issue_priority(labels: set[str], title: str, age_days: int) -> str:
+    text = title.casefold()
+    if any(word in text for word in ("crash", "data loss", "regression")):
+        return "High"
+    if "Status: Confirmed" in labels:
+        return "Confirmed"
+    if age_days >= 180:
+        return "Stale candidate"
+    return "Normal"
+
+
+def issue_next_action(labels: set[str], assigned: bool, has_reproducer: bool, age_days: int) -> str:
+    if any("needs info" in label.casefold() for label in labels):
+        return "Waiting for reporter"
+    if age_days >= 180:
+        return "Recheck or close"
+    if "Status: Confirmed" in labels:
+        return "Ready to investigate"
+    if not has_reproducer:
+        return "Needs reproduction"
+    if not assigned:
+        return "Needs triage"
+    return "Assigned"
+
+
+def normalize_issue(issue: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
+    labels = {item["name"] for item in issue["labels"]}
+    body = issue.get("body") or ""
+    age_days = age_in_days(issue["updated_at"], now)
+    has_reproducer = issue_has_reproducer(body)
+    assignees = [item["login"] for item in issue.get("assignees", [])]
+    return {
+        "number": issue["number"],
+        "title": issue["title"],
+        "url": issue["html_url"],
+        "author": (issue.get("user") or {}).get("login", "ghost"),
+        "priority": issue_priority(labels, issue["title"], age_days),
+        "next_action": issue_next_action(labels, bool(assignees), has_reproducer, age_days),
+        "updated": issue["updated_at"][:10],
+        "age_days": age_days,
+        "comments": issue["comments"],
+        "labels": sorted(labels),
+        "assignees": assignees,
+        "milestone": (issue.get("milestone") or {}).get("title"),
+        "has_attachment": "github.com/user-attachments/" in body,
+        "has_reproducer_hint": has_reproducer,
+    }
+
+
 def markdown_table(items: list[dict[str, Any]]) -> list[str]:
     if not items:
         return ["None."]
@@ -222,16 +295,18 @@ def render_json(
     reviewers: list[str],
     now: dt.datetime,
     incidental: list[dict[str, Any]] | None = None,
+    issues: list[dict[str, Any]] | None = None,
 ) -> str:
     """Render the versioned payload consumed by the static web dashboard."""
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": now.isoformat(timespec="seconds"),
         "repository": repository,
         "label": label,
         "excluded_reviewers": reviewers,
         "incidental_prs": incidental or [],
         "items": items,
+        "issues": issues or [],
     }
     return json.dumps(payload, indent=2) + "\n"
 
@@ -265,6 +340,7 @@ def main() -> int:
     now = dt.datetime.now(dt.timezone.utc)
     try:
         pull_requests = fetch_pull_requests(args.repo, args.label, reviewers_list)
+        raw_issues = fetch_issues(args.repo, args.label)
         unreviewed = [pr for pr in pull_requests if needs_review(pr, reviewers)]
         for pr in unreviewed:
             if pr["changedFiles"] >= args.large_pr_files:
@@ -286,6 +362,9 @@ def main() -> int:
     ]
     priority_order = {"High": 0, "Normal": 1, "Watch": 2, "Stale candidate": 3}
     items.sort(key=lambda item: (item["draft"], priority_order[item["priority"]], item["age_days"]))
+    issues = [normalize_issue(issue, now) for issue in raw_issues]
+    issue_priority_order = {"High": 0, "Confirmed": 1, "Normal": 2, "Stale candidate": 3}
+    issues.sort(key=lambda issue: (issue_priority_order[issue["priority"]], issue["age_days"]))
     if args.format == "json":
         incidental = [
             {
@@ -297,7 +376,7 @@ def main() -> int:
             }
             for pr in incidental_prs
         ]
-        report = render_json(items, args.repo, args.label, reviewers_list, now, incidental)
+        report = render_json(items, args.repo, args.label, reviewers_list, now, incidental, issues)
     else:
         report = render_markdown(items, args.repo, args.label, reviewers_list, now)
 
