@@ -23,7 +23,6 @@ query($searchQuery: String!, $cursor: String) {
         mergeStateStatus
         author { login }
         labels(first: 50) { nodes { name } }
-        files(first: 100) { nodes { path } }
         reviews(first: 100) { totalCount nodes { author { login } } }
         comments(first: 100) { totalCount nodes { author { login } } }
       }
@@ -75,6 +74,19 @@ def fetch_pull_requests(repository: str, label: str) -> list[dict[str, Any]]:
         if not data["pageInfo"]["hasNextPage"]:
             return pull_requests
         cursor = data["pageInfo"]["endCursor"]
+
+
+def fetch_changed_files(repository: str, number: int) -> list[dict[str, str]]:
+    """Fetch file paths separately to keep the main GraphQL query inexpensive."""
+    pages = run_gh(
+        [
+            "api",
+            "--paginate",
+            "--slurp",
+            f"repos/{repository}/pulls/{number}/files?per_page=100",
+        ]
+    )
+    return [{"path": item["filename"]} for page in pages for item in page]
 
 
 def participant_logins(connection: dict[str, Any]) -> set[str]:
@@ -247,11 +259,15 @@ def main() -> int:
     now = dt.datetime.now(dt.timezone.utc)
     try:
         pull_requests = fetch_pull_requests(args.repo, args.label)
+        unreviewed = [pr for pr in pull_requests if needs_review(pr, reviewers)]
+        for pr in unreviewed:
+            if pr["changedFiles"] >= args.large_pr_files:
+                pr["files"] = {"nodes": fetch_changed_files(args.repo, pr["number"])}
     except (FileNotFoundError, subprocess.CalledProcessError, KeyError, json.JSONDecodeError) as error:
-        print(f"error: unable to query GitHub: {error}", file=sys.stderr)
+        detail = error.stderr.strip() if isinstance(error, subprocess.CalledProcessError) else str(error)
+        print(f"error: unable to query GitHub: {detail}", file=sys.stderr)
         return 1
 
-    unreviewed = [pr for pr in pull_requests if needs_review(pr, reviewers)]
     incidental_prs = [
         pr
         for pr in unreviewed

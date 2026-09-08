@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T14:49:42+00:00",
+  "generated_at": "2026-09-08T14:54:10+00:00",
   "repository": "FreeCAD/FreeCAD",
   "label": "Mod: BIM",
   "excluded_reviewers": [
@@ -19,7 +19,7 @@
       "number": 27493,
       "title": "[ SPDX ]: Relocate File Notices",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/27493",
-      "bim_files": 0,
+      "bim_files": 460,
       "changed_files": 6494
     }
   ],
@@ -137,7 +137,7 @@
       "draft": true,
       "priority": "Watch",
       "updated": "2026-09-03",
-      "age_days": 4,
+      "age_days": 5,
       "additions": 77,
       "deletions": 33,
       "changed_files": 2,
