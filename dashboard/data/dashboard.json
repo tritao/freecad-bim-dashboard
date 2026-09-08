@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-08T15:17:34+00:00",
+  "generated_at": "2026-09-08T18:53:01+00:00",
   "repository": "FreeCAD/FreeCAD",
   "label": "Mod: BIM",
   "excluded_reviewers": [
@@ -29,6 +29,7 @@
       "title": "BIM: Add IFC summary and use it for import dialog",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/32466",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "draft": false,
       "priority": "High",
       "updated": "2026-09-08",
@@ -50,6 +51,7 @@
       "title": "Draft/BIM: Trim BIM objects and separate face extrusion",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/31941",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "draft": false,
       "priority": "High",
       "updated": "2026-09-06",
@@ -72,6 +74,7 @@
       "title": "BIM: adding  bSDD contract model and IFC classification persistence",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/31062",
       "author": "paragforwork",
+      "author_avatar": "https://avatars.githubusercontent.com/u/248921312?v=4",
       "draft": false,
       "priority": "Normal",
       "updated": "2026-08-10",
@@ -94,6 +97,7 @@
       "title": "BIM: adding bSDD async network client",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/31061",
       "author": "paragforwork",
+      "author_avatar": "https://avatars.githubusercontent.com/u/248921312?v=4",
       "draft": false,
       "priority": "Normal",
       "updated": "2026-08-08",
@@ -116,6 +120,7 @@
       "title": "BIM: fix unwanted roll on tilted profile beams in placeAlongEdge",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/29086",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "draft": true,
       "priority": "Watch",
       "updated": "2026-09-08",
@@ -134,6 +139,7 @@
       "title": "BIM: Covering - add 'Apply' button to the task panel",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/30815",
       "author": "kkchemboli",
+      "author_avatar": "https://avatars.githubusercontent.com/u/221174284?v=4",
       "draft": true,
       "priority": "Watch",
       "updated": "2026-09-03",
@@ -155,6 +161,7 @@
       "title": "BIM: add bSDD classification provider UI workflow",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/31063",
       "author": "paragforwork",
+      "author_avatar": "https://avatars.githubusercontent.com/u/248921312?v=4",
       "draft": true,
       "priority": "Stale candidate",
       "updated": "2026-08-08",
@@ -177,6 +184,7 @@
       "title": "BIM: add bSDD classification integration",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/30733",
       "author": "paragforwork",
+      "author_avatar": "https://avatars.githubusercontent.com/u/248921312?v=4",
       "draft": true,
       "priority": "Stale candidate",
       "updated": "2026-07-29",
@@ -199,10 +207,11 @@
       "title": "BIM: simplify and unify SketchArch add-on checks",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/26914",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "draft": true,
       "priority": "Stale candidate",
       "updated": "2026-04-07",
-      "age_days": 153,
+      "age_days": 154,
       "additions": 116,
       "deletions": 174,
       "changed_files": 8,
@@ -217,6 +226,7 @@
       "title": "SPDX [ 48 ][ Src / Mod / BIM ]",
       "url": "https://github.com/FreeCAD/FreeCAD/pull/26708",
       "author": "PhoneDroid",
+      "author_avatar": "https://avatars.githubusercontent.com/u/73050054?v=4",
       "draft": true,
       "priority": "Stale candidate",
       "updated": "2026-01-07",
@@ -237,10 +247,11 @@
       "title": "BIM: FreeCAD crashes when creating Curtain Wall in top view",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30583",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "High",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -248,6 +259,7 @@
         "Type: Crash"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -257,10 +269,11 @@
       "title": "BIM: IFC import regression caused by #29492",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31403",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "High",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "File format: IFC",
@@ -271,6 +284,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -280,6 +299,7 @@
       "title": "BIM: Walls made up of multiple collinear segments create null shapes depending on width",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32465",
       "author": "bouchacha",
+      "author_avatar": "https://avatars.githubusercontent.com/u/19356629?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-08",
@@ -292,6 +312,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -301,6 +327,7 @@
       "title": "BIM: Space 'Elevation With Flooring' property provides wrong value",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31869",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-07",
@@ -313,6 +340,7 @@
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -322,10 +350,11 @@
       "title": "BIM_Report - various formatting styles of output numbers in report",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32097",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-06",
-      "age_days": 1,
+      "age_days": 2,
       "comments": 2,
       "labels": [
         "Mod: BIM",
@@ -334,6 +363,12 @@
       ],
       "assignees": [
         "tritao"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "tritao",
+          "avatar_url": "https://avatars.githubusercontent.com/u/602268?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -344,10 +379,11 @@
       "title": "BIM/IFC: AttributeError: entity instance of type 'IFC4.IfcPropertyEnumeratedValue' has no attribute 'NominalValue' when viewing IFC4 properties",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31872",
       "author": "pvogt09",
+      "author_avatar": "https://avatars.githubusercontent.com/u/50047961?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-05",
-      "age_days": 2,
+      "age_days": 3,
       "comments": 0,
       "labels": [
         "File format: IFC",
@@ -355,6 +391,7 @@
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -364,10 +401,11 @@
       "title": "BIM: IFC export of App::Parts contains unwanted child base objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28368",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "File format: IFC",
@@ -376,6 +414,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -385,10 +424,11 @@
       "title": "BIM: 'BIM_Beam' object has no attribute 'finish'",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29053",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 0,
       "labels": [
         "Mod: BIM",
@@ -397,6 +437,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -406,10 +447,11 @@
       "title": "BIM_DrawingView not clipping correctly when nothing is cut by by the Shape2DView",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29752",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 0,
       "labels": [
         "Mod: BIM",
@@ -419,6 +461,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -428,10 +471,11 @@
       "title": "BIM/Draft: BIM_DimensionHorizontal and BIM_DimensionVertical do not work properly if an edge is preselected",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29766",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -440,6 +484,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -449,16 +494,18 @@
       "title": "BIM: gable wall area under roof not well calculated when using arch_remove",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29987",
       "author": "aster30999",
+      "author_avatar": "https://avatars.githubusercontent.com/u/250678368?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -468,10 +515,11 @@
       "title": "BIM: Arch_Section 'Cut View' property does not work in fullscreen/undocked mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30243",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -480,6 +528,12 @@
       ],
       "assignees": [
         "Roy-043"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -490,10 +544,11 @@
       "title": "BIM: IFC export does not export hole in the wall",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30614",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 9,
       "labels": [
         "File format: IFC",
@@ -502,6 +557,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -511,16 +567,18 @@
       "title": "BIM: Link of an Axis System is empty",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30699",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -530,10 +588,11 @@
       "title": "BIM: Covering Length and Width parameter editing in task panel is not saved",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30773",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 0,
       "labels": [
         "Hackathon",
@@ -541,6 +600,7 @@
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -550,10 +610,11 @@
       "title": "BIM: Covering resets appearance during editing",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30777",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -562,6 +623,7 @@
         "Topic: Color"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -571,10 +633,11 @@
       "title": "BIM: IFC Sample error on load",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31389",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 11,
       "labels": [
         "File format: IFC",
@@ -583,6 +646,12 @@
       ],
       "assignees": [
         "Roy-043"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -593,16 +662,18 @@
       "title": "BIM: Adding objects to Arch_Space using Add to Group or drag-drop in project tree does not work",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31886",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -612,16 +683,18 @@
       "title": "BIM: Unable to load models from BIM_Library in safe mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31925",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "Mod: BIM",
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -631,16 +704,18 @@
       "title": "BIM: Beam object changes position when IfcType is changed",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32130",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "Mod: BIM",
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -650,10 +725,11 @@
       "title": "BIM: Saving/Exporting IFC file ignores the IFC schema version setting in FreeCAD",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22978",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 9,
       "labels": [
         "File format: IFC",
@@ -663,6 +739,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -672,10 +749,11 @@
       "title": "External reference will ignore multiple coordinate systems",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23323",
       "author": "hafpel",
+      "author_avatar": "https://avatars.githubusercontent.com/u/22301396?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Help wanted",
@@ -685,6 +763,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -694,10 +773,11 @@
       "title": "BIM: view objects are not restored if a file saved in headless mode is opened",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23376",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "Mod: BIM",
@@ -706,6 +786,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -715,10 +796,11 @@
       "title": "BIM: SectionPlane cuts grid",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23828",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -728,6 +810,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -737,10 +820,11 @@
       "title": "BIM: Error when creating Draft_Line in Strict IFC mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24306",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "File format: IFC",
@@ -752,6 +836,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -761,10 +851,11 @@
       "title": "BIM: Error when creating Draft_BSpline in strict IFC mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24307",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "File format: IFC",
@@ -774,6 +865,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -783,10 +875,11 @@
       "title": "BIM: Draft_Circle object created without a geometry in strict IFC mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24308",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 2,
       "labels": [
         "File format: IFC",
@@ -798,6 +891,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -807,10 +906,11 @@
       "title": "BIM: Toggles the visibility of building or level links don't work.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24370",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -819,6 +919,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -828,10 +929,11 @@
       "title": "BIM: When empty building and level structure without site is converted to IFC, these objects disappear",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24926",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "File format: IFC",
@@ -842,6 +944,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -851,10 +959,11 @@
       "title": "TechDraw: BIM_View object error when Render Mode is switched to Coin",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24929",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 29,
       "labels": [
         "3rd party: Coin3D",
@@ -869,6 +978,12 @@
       "assignees": [
         "chennes"
       ],
+      "assignee_avatars": [
+        {
+          "login": "chennes",
+          "avatar_url": "https://avatars.githubusercontent.com/u/216920?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -878,10 +993,11 @@
       "title": "BIM: Arch_Reference has graphical artifacts on screen",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24939",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -891,6 +1007,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -900,10 +1017,11 @@
       "title": "TechDraw/BIM: Button Lock/unlock view does nothing for Draft and BIM views",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25133",
       "author": "pacaeiro",
+      "author_avatar": "https://avatars.githubusercontent.com/u/198225897?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 2,
       "labels": [
         "Mod: BIM",
@@ -913,6 +1031,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -922,10 +1041,11 @@
       "title": "BIM: Cannot perform an IFC Export",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25529",
       "author": "ElSordo",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1365061?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "File format: IFC",
@@ -934,6 +1054,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -943,10 +1064,11 @@
       "title": "BIM: IFC export creates a faulty file from IfcSite object that is not an ArchSite",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25537",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "File format: IFC",
@@ -955,6 +1077,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -964,10 +1087,11 @@
       "title": "BIM: ArchReference: Switching from Lightweight to Normal mode does not work properly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26091",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -975,6 +1099,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -984,10 +1109,11 @@
       "title": "BIM_Report: Various formatting of results based on number of decimals",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26250",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 0,
       "labels": [
         "Mod: BIM",
@@ -996,6 +1122,12 @@
       ],
       "assignees": [
         "furgo16"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "furgo16",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148809153?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -1006,10 +1138,11 @@
       "title": "BIM_Report: spreadsheet alignment tools don't work in ReportResult",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26251",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -1018,6 +1151,12 @@
       ],
       "assignees": [
         "furgo16"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "furgo16",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148809153?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -1028,10 +1167,11 @@
       "title": "BIM: default structure extrusion direction can flip compared to v1.0.2",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26532",
       "author": "giacomomarchioro",
+      "author_avatar": "https://avatars.githubusercontent.com/u/7785549?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 14,
       "labels": [
         "Mod: BIM",
@@ -1042,6 +1182,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1051,10 +1197,11 @@
       "title": "BIM: Schedule Wall length summary does not include merged walls",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26862",
       "author": "PaulL1",
+      "author_avatar": "https://avatars.githubusercontent.com/u/5248789?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 16,
       "labels": [
         "Mod: BIM",
@@ -1062,6 +1209,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1071,10 +1219,11 @@
       "title": "BIM: The 'None (Use whole object)' option of Arch_Reference does not render all objects properly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27170",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -1082,6 +1231,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1091,10 +1241,11 @@
       "title": "TechDraw_ArchView in Solid RenderMode does not display certain objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27647",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -1103,6 +1254,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1112,10 +1264,11 @@
       "title": "BIM: \"Flip direction\" wall context menu does not flip direction",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27683",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -1123,6 +1276,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1132,10 +1286,11 @@
       "title": "BIM: FreeCAD freezes when placing BIM_Door",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27982",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 16,
       "labels": [
         "Mod: BIM",
@@ -1146,6 +1301,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1155,10 +1311,11 @@
       "title": "BIM: External defining geometry in a sketch doesn't generate Walls",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28239",
       "author": "entuland",
+      "author_avatar": "https://avatars.githubusercontent.com/u/4322309?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 23,
       "labels": [
         "Mod: BIM",
@@ -1166,6 +1323,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -1175,10 +1333,11 @@
       "title": "BIM: IFC import disappears when moving",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18755",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 10,
       "labels": [
         "File format: IFC",
@@ -1190,6 +1349,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1199,10 +1364,11 @@
       "title": "BIM: setup changing Preferred working units does not work correctly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18967",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 5,
       "labels": [
         "Mod: BIM",
@@ -1213,6 +1379,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1222,10 +1389,11 @@
       "title": "PySide6: shiboken6 object memory leak (`BIM`, `CAM`, ...)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19066",
       "author": "Andrei-Pozolotin",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1622151?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 12,
       "labels": [
         "3rd party: Qt",
@@ -1236,6 +1404,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1245,10 +1414,11 @@
       "title": "BIM: Error when exporting to .ifcJSON",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19327",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 19,
       "labels": [
         "File format: IFC",
@@ -1258,6 +1428,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1267,10 +1438,11 @@
       "title": "BIM: Arch_axis creates incorrect Shape2DView",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19620",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -1278,6 +1450,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1287,10 +1460,11 @@
       "title": "[Draft/Bim] The panel with active layers displays the active layer even if it is not there (when changing the document or closing it).",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19667",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 8,
       "labels": [
         "Mod: BIM",
@@ -1299,6 +1473,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1308,10 +1483,11 @@
       "title": "BIM: Project Setup in native mode adds multiple projects to the same document",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20290",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -1319,6 +1495,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1328,10 +1505,11 @@
       "title": "BIM: IfcProperties not possible to work with custom property set named without Pset_ prefix in the CustomPsets.csv",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20352",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "Mod: BIM",
@@ -1342,6 +1520,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1351,10 +1535,11 @@
       "title": "BIM: Property VIew>Data>\"Clone Of\" doesn't work",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20417",
       "author": "psommerfeld",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1151630?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -1362,6 +1547,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1371,10 +1557,11 @@
       "title": "BIM: 'IfcOpenShell update' does not update the library on Windows",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20682",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 21,
       "labels": [
         "3rd party component",
@@ -1383,6 +1570,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1392,10 +1580,11 @@
       "title": "BIM: when an object is created out of a base object in a container, ghost base objects appear",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20985",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 14,
       "labels": [
         "Mod: BIM",
@@ -1406,6 +1595,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1415,10 +1605,11 @@
       "title": "BIM: Arch_Site's compass is not at z0 (a deeper look at compass functionality is needed)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21000",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "Documentation",
@@ -1427,6 +1618,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1436,10 +1628,11 @@
       "title": "BIM: Face property of Wall is ignored",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21075",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 13,
       "labels": [
         "Mod: BIM",
@@ -1448,6 +1641,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1457,10 +1651,11 @@
       "title": "BIM: Spatial structure of exported IFC corrupted when more than 1 building object is present",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21399",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "File format: IFC",
@@ -1469,6 +1664,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1478,10 +1674,11 @@
       "title": "BIM: windows not recalculated correctly after draft edit of the base  line of the hosting wall",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21439",
       "author": "zisco",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1216732?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 43,
       "labels": [
         "Mod: BIM",
@@ -1489,6 +1686,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1498,10 +1696,11 @@
       "title": "BIM: Toggling non-empty site visibility marks whole site for recompute",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21674",
       "author": "Harvie",
+      "author_avatar": "https://avatars.githubusercontent.com/u/276504?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -1509,6 +1708,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1518,10 +1718,11 @@
       "title": "BIM: hexagonal roof run length not limited properly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21848",
       "author": "Harvie",
+      "author_avatar": "https://avatars.githubusercontent.com/u/276504?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 11,
       "labels": [
         "Mod: BIM",
@@ -1529,6 +1730,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1538,10 +1740,11 @@
       "title": "DXF: inconsistent object structure (Use layers: unchecked, Merge layers into blocks: checked)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21897",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "File format: DXF",
@@ -1550,6 +1753,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1559,10 +1763,11 @@
       "title": "BIM: Building object is collapsed when switching to strict IFC mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21911",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "File format: IFC",
@@ -1571,6 +1776,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1580,10 +1786,11 @@
       "title": "BIM: Walls,windows and doors `move base`  property doesn't work if you move with  using data->placement->position or  transform tool",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21958",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 12,
       "labels": [
         "Mod: BIM",
@@ -1591,6 +1798,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1600,10 +1808,11 @@
       "title": "BIM: IFC export does not include door and window as part of an Assembly, which is created from FreeCAD Group",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22054",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "File format: IFC",
@@ -1615,6 +1824,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1624,10 +1839,11 @@
       "title": "DXF: C++ DXF importer imports only one Layout (paper space objects)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22214",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 5,
       "labels": [
         "File format: DXF",
@@ -1637,6 +1853,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1646,10 +1863,11 @@
       "title": "BIM: Arch_Wall not created from sketch with elliptical arc",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22834",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "Mod: BIM",
@@ -1658,6 +1876,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1667,10 +1886,11 @@
       "title": "BIM: IFC export, wrong placement on nested compound objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/9324",
       "author": "berndhahnebach",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6129869?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 12,
       "labels": [
         "File format: IFC",
@@ -1682,6 +1902,12 @@
       "assignees": [
         "Roy-043"
       ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1691,10 +1917,11 @@
       "title": "BIM: Closing sketch toggles all hidden BIM objects visible again",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18727",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 10,
       "labels": [
         "Mod: BIM",
@@ -1706,6 +1933,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": "26.3",
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1715,10 +1943,11 @@
       "title": "BIM: Unlocked IFC projects preserves IFC objects which were deleted by external application from the IFC file",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18234",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 15,
       "labels": [
         "File format: IFC",
@@ -1730,6 +1959,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1739,10 +1974,11 @@
       "title": "BIM: dialogues undesirable behavior",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17983",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 12,
       "labels": [
         "Mod: BIM",
@@ -1754,6 +1990,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1763,10 +2005,11 @@
       "title": "BIM: Several issues when default BIMexample is converted to IFC",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17862",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 13,
       "labels": [
         "File format: IFC",
@@ -1775,6 +2018,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1784,10 +2028,11 @@
       "title": "BIM: switching to strict IFC mode breaks the Std_undo tool results",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17145",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 4,
       "labels": [
         "Mod: BIM",
@@ -1798,6 +2043,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1807,10 +2058,11 @@
       "title": "TD + BIM Section plane. Render mode affects rotation in the drawing (reason: OCC's HLR algo, that's used for wireframe mode, only takes a projection direction, and no Up Vector)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16978",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 9,
       "labels": [
         "3rd party: OCC",
@@ -1821,6 +2073,7 @@
         "Type: Known issue"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1830,10 +2083,11 @@
       "title": "BIM: FreeCAD reports file not saved in Hybrid IFC mode when it was saved",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16410",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 6,
       "labels": [
         "File format: IFC",
@@ -1845,6 +2099,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -1854,10 +2114,11 @@
       "title": "BIM: Structural members (beams and columns) following a non-ortho axis might have wrong rotation",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/15704",
       "author": "yorikvanhavre",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1136856?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "Mod: BIM",
@@ -1868,6 +2129,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1877,10 +2144,11 @@
       "title": "BIM: column tool creates an object named \"beam\"",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/15228",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 10,
       "labels": [
         "Mod: BIM",
@@ -1891,6 +2159,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1900,10 +2174,11 @@
       "title": "BIM: Multimaterial and override align give wrong result",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/10046",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 21,
       "labels": [
         "Help wanted",
@@ -1915,6 +2190,12 @@
       "assignees": [
         "paullee0"
       ],
+      "assignee_avatars": [
+        {
+          "login": "paullee0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/40677073?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1924,10 +2205,11 @@
       "title": "BIM: Arch_Space object doesn't work with non-convex boundaries",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/6091",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 15,
       "labels": [
         "Help wanted",
@@ -1937,6 +2219,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1946,10 +2229,11 @@
       "title": "Fix IV mode in Sketchfab exporter",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5744",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 10,
       "labels": [
         "Good first issue",
@@ -1958,6 +2242,7 @@
         "Type: Bug"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1967,6 +2252,7 @@
       "title": "BIM: some commands ignore AutoGroup setting",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24581",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-08-16",
@@ -1978,6 +2264,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -1987,6 +2274,7 @@
       "title": "BIM: CodeQL warnings after pre-commit black formatting need follow up",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24681",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-08-11",
@@ -1999,6 +2287,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2008,6 +2297,7 @@
       "title": "BIM Doors: Inverting Hinge Position or Inverting Opening Direction does not update Operation Type Field",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31450",
       "author": "yosmo78",
+      "author_avatar": "https://avatars.githubusercontent.com/u/36019331?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-07-21",
@@ -2018,6 +2308,7 @@
         "Status: Confirmed"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2027,6 +2318,7 @@
       "title": "BIM: BuildingPart has 2 SavedInventor properties",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26092",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-05-22",
@@ -2039,6 +2331,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2048,6 +2341,7 @@
       "title": "BIM: Upstream pyshp library is at v3.0.1 (currently we link to v2.4.1) and therefore needs vetting in order to integrate into BIM workflow",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24055",
       "author": "luzpaz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/4140247?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-05-22",
@@ -2060,6 +2354,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2069,6 +2364,7 @@
       "title": "BIM: Layer Manager code also in Draft WB",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/14584",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-04-30",
@@ -2084,6 +2380,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2093,6 +2395,7 @@
       "title": "BIM: Sliding door can be placed in corners where opening is physically impossible",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29567",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Confirmed",
       "next_action": "Ready to investigate",
       "updated": "2026-04-23",
@@ -2104,6 +2407,7 @@
         "Topic: User Interface"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2113,6 +2417,7 @@
       "title": "BIM: Array of windows not putting holes in host",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20979",
       "author": "brookermusic",
+      "author_avatar": "https://avatars.githubusercontent.com/u/209032838?v=4",
       "priority": "Confirmed",
       "next_action": "Recheck or close",
       "updated": "2026-01-17",
@@ -2125,6 +2430,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2134,6 +2440,7 @@
       "title": "BIM: Correct name for 'IFC Type' property",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18452",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Confirmed",
       "next_action": "Recheck or close",
       "updated": "2025-08-10",
@@ -2148,6 +2455,16 @@
         "yorikvanhavre",
         "marcuspollio"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        },
+        {
+          "login": "marcuspollio",
+          "avatar_url": "https://avatars.githubusercontent.com/u/131592747?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2157,6 +2474,7 @@
       "title": "Draft/Bim: The problem of summing displacements when transforming objects built on the basis of simpler forms (sketch/line)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16278",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Confirmed",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -2170,6 +2488,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2179,6 +2503,7 @@
       "title": "BIM: Window/door placement doesn't take the active level into account.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32483",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-09-08",
@@ -2190,6 +2515,7 @@
         "Status: Needs triage"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2199,6 +2525,7 @@
       "title": "BIM: Prevent wrapping \"Building\", and \"Level\" in objects of other types.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32488",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-09-08",
@@ -2210,6 +2537,7 @@
         "Topic: User Interface"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2219,10 +2547,11 @@
       "title": "BIM/Draft: implement new Part::FaceMakerUnified facemaker",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32417",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-09-05",
-      "age_days": 2,
+      "age_days": 3,
       "comments": 1,
       "labels": [
         "Mod: BIM",
@@ -2230,6 +2559,7 @@
         "Type: Code Quality"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2239,16 +2569,18 @@
       "title": "BIM: DrawingView container movement does not work well with dimensions and draft_label",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29734",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 3,
       "labels": [
         "Mod: BIM",
         "Status: Needs confirmation"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2258,10 +2590,11 @@
       "title": "BIM: nudge widget in status bar does not update properly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30401",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Assigned",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 0,
       "labels": [
         "Mod: BIM",
@@ -2269,6 +2602,12 @@
       ],
       "assignees": [
         "Roy-043"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "Roy-043",
+          "avatar_url": "https://avatars.githubusercontent.com/u/70520633?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": true,
@@ -2279,10 +2618,11 @@
       "title": "BIM/Draft: display of coordinates for objects with a base object is FUNDAMENTALLY incorrect",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26265",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 5,
       "labels": [
         "Mod: BIM",
@@ -2290,6 +2630,7 @@
         "Status: Needs confirmation"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2299,10 +2640,11 @@
       "title": "BIM: Site WindRose does not scale along with Solar Diagram",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21979",
       "author": "Harvie",
+      "author_avatar": "https://avatars.githubusercontent.com/u/276504?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 13,
       "labels": [
         "Mod: BIM",
@@ -2312,6 +2654,7 @@
         "Topic: User Interface"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2321,16 +2664,18 @@
       "title": "Draft/BIM: \"Expand Array  + Mirror\" is an unusual result.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16574",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 12,
       "labels": [
         "Mod: BIM",
         "Status: Needs confirmation"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2340,10 +2685,11 @@
       "title": "SVG: rendering of Draft annotations in DraftViews and ArchViews not accurate",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/9888",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-09-04",
-      "age_days": 3,
+      "age_days": 4,
       "comments": 7,
       "labels": [
         "File format: SVG",
@@ -2355,6 +2701,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2364,6 +2711,7 @@
       "title": "BIM: remove deprecated property `CutDistance` in Arch_SectionPlane",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28909",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-31",
@@ -2376,6 +2724,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2385,6 +2734,7 @@
       "title": "Toponaming/BIM: Adding windows and doors to a wall changes the numbering of vertices/edges/faces",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/14927",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-08-30",
@@ -2400,6 +2750,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2409,15 +2765,17 @@
       "title": "BIM: roof tool refactor or improve",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32036",
       "author": "Avbpp",
+      "author_avatar": "https://avatars.githubusercontent.com/u/175609385?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-29",
-      "age_days": 9,
+      "age_days": 10,
       "comments": 3,
       "labels": [
         "Mod: BIM"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2427,6 +2785,7 @@
       "title": "BIM: No possibility to create curved doors or windows based on a profile",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18749",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-08-28",
@@ -2437,6 +2796,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2446,6 +2806,7 @@
       "title": "BIM: ArchSection ignores ArchSpace",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22431",
       "author": "zbynekwinkler",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1130051?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-08-19",
@@ -2457,6 +2818,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2466,6 +2828,7 @@
       "title": "BIM: BIM clone implementation is unfinished",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/32003",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-16",
@@ -2475,6 +2838,7 @@
         "Mod: BIM"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2484,6 +2848,7 @@
       "title": "BIM: Importing object from BIM Library is not recorded in Std_Undo",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31879",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-11",
@@ -2495,6 +2860,7 @@
         "Topic: Undo/Redo"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2504,6 +2870,7 @@
       "title": "Improving the usability of working with the workplane (suggestion)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/14825",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-08-10",
@@ -2515,6 +2882,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2524,6 +2892,7 @@
       "title": "BIM_Setup dialogue has different set of licenses than Preferences dialogue",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22995",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-08-09",
@@ -2537,6 +2906,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2546,6 +2916,7 @@
       "title": "BIM: Level and Building 'Auto Working Plane' option does not work",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31808",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-09",
@@ -2556,6 +2927,7 @@
         "Type: Code Quality"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2565,6 +2937,7 @@
       "title": "BIM-TechDraw Site Feature Request: There should be a world point for the lat/long/elevation which will also be rendered into TechDraw",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/31586",
       "author": "yosmo78",
+      "author_avatar": "https://avatars.githubusercontent.com/u/36019331?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-08-02",
@@ -2574,6 +2947,7 @@
         "Mod: BIM"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2583,6 +2957,7 @@
       "title": "BIM+Draft: TD DraftView and ArchView should obey the TD line cap preference",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27866",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-07-17",
@@ -2595,6 +2970,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2604,6 +2980,7 @@
       "title": "Bim[Section] (TechDraw_ArchView)- Draft line view properties not rendering properly",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28111",
       "author": "0phiTeS",
+      "author_avatar": "https://avatars.githubusercontent.com/u/89830758?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-07-17",
@@ -2615,6 +2992,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2624,6 +3002,7 @@
       "title": "BIM: There is no correct way to place dimensions and have them scale in Tech Draw",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30446",
       "author": "gianlucafiore",
+      "author_avatar": "https://avatars.githubusercontent.com/u/50465150?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-07-17",
@@ -2635,6 +3014,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2644,6 +3024,7 @@
       "title": "BIM: BimViews improvements feedback",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18410",
       "author": "tritao",
+      "author_avatar": "https://avatars.githubusercontent.com/u/602268?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-07-17",
@@ -2658,6 +3039,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2667,6 +3054,7 @@
       "title": "BIM: BIM_DrawingView cut margin does not accept negative values",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28153",
       "author": "beda17",
+      "author_avatar": "https://avatars.githubusercontent.com/u/35468140?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-07-17",
@@ -2678,6 +3066,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2687,6 +3076,7 @@
       "title": "TechDraw_ArchView display hatch instead of material when object is cut",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27815",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-07-17",
@@ -2698,6 +3088,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2707,6 +3098,7 @@
       "title": "BIM_DrawingView shows edges of the clipped plane",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28480",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-07-17",
@@ -2718,6 +3110,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2727,6 +3120,7 @@
       "title": "BIM: Window/Door placement improvement while working in top view",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30933",
       "author": "0phiTeS",
+      "author_avatar": "https://avatars.githubusercontent.com/u/89830758?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-06-25",
@@ -2737,6 +3131,7 @@
         "Topic: User Interface"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2746,10 +3141,11 @@
       "title": "BIM: Covering - add 'Apply' button to the task panel",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30775",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-06-15",
-      "age_days": 84,
+      "age_days": 85,
       "comments": 4,
       "labels": [
         "Good first issue",
@@ -2758,6 +3154,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2767,16 +3164,18 @@
       "title": "BIM: Roof can't create a roof of varying wall heights",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23485",
       "author": "psommerfeld",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1151630?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-06-12",
-      "age_days": 87,
+      "age_days": 88,
       "comments": 1,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2786,6 +3185,7 @@
       "title": "BIM: make Door and Window commands less interdependent",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24279",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-06-05",
@@ -2796,6 +3196,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2805,10 +3206,11 @@
       "title": "BIM/Draft: Add the ability to edit object parameters using the mouse",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20025",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-27",
-      "age_days": 103,
+      "age_days": 104,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -2816,6 +3218,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2825,10 +3228,11 @@
       "title": "BIM: Easier wall editing with gizmos",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29847",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-05-26",
-      "age_days": 104,
+      "age_days": 105,
       "comments": 7,
       "labels": [
         "Mod: BIM",
@@ -2837,6 +3241,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2846,6 +3251,7 @@
       "title": "BIM: Extend supported Arch_PipeConnector types",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30380",
       "author": "beda17",
+      "author_avatar": "https://avatars.githubusercontent.com/u/35468140?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-05-24",
@@ -2856,6 +3262,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -2865,6 +3272,7 @@
       "title": "BIM: Wall Designer that allow to Design a Wall with its inner structure",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28352",
       "author": "Mannshoch",
+      "author_avatar": "https://avatars.githubusercontent.com/u/7795891?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-05-23",
@@ -2875,6 +3283,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -2884,6 +3293,7 @@
       "title": "BIM: first start experience needs improvement",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25121",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-22",
@@ -2895,6 +3305,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2904,6 +3315,7 @@
       "title": "BIM: formatting coordination task 1.1",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20758",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-22",
@@ -2914,6 +3326,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": "26.3",
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2923,6 +3336,7 @@
       "title": "BIM: add Element Status workflow",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19175",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-22",
@@ -2936,6 +3350,12 @@
       "assignees": [
         "marcuspollio"
       ],
+      "assignee_avatars": [
+        {
+          "login": "marcuspollio",
+          "avatar_url": "https://avatars.githubusercontent.com/u/131592747?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -2945,6 +3365,7 @@
       "title": "Draft: move Arch/BIM params out of Draft module",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21297",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-22",
@@ -2957,6 +3378,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2966,6 +3388,7 @@
       "title": "BIM+Draft: verify usage of get_normal and getNormal",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27539",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-22",
@@ -2978,6 +3401,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -2987,16 +3411,18 @@
       "title": "BIM: No possibility to create curved stairs",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18748",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-21",
-      "age_days": 109,
+      "age_days": 110,
       "comments": 12,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3006,6 +3432,7 @@
       "title": "BIM: Pipes and ducts are generated as geometry/IFC-tagged objects but do not expose MEP connection points",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30308",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-21",
@@ -3016,6 +3443,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3025,6 +3453,7 @@
       "title": "BIM: Add button/tool to manually add IfcDistributionPort to Part, Assembly or IFC components",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/30309",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-05-21",
@@ -3035,6 +3464,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -3044,6 +3474,7 @@
       "title": "BIM+Draft: verify if base objects used for WB objects make sense",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27138",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-17",
@@ -3056,6 +3487,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3065,6 +3497,7 @@
       "title": "BIM: formatting coordination task 1.2",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24708",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-16",
@@ -3075,6 +3508,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3084,6 +3518,7 @@
       "title": "Gui: No way to copy / paste property values between objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17749",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-14",
@@ -3099,6 +3534,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3108,10 +3544,11 @@
       "title": "BIM: there are two different ways to define visual and annotation styles",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25122",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-08",
-      "age_days": 122,
+      "age_days": 123,
       "comments": 5,
       "labels": [
         "Mod: BIM",
@@ -3120,6 +3557,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3129,10 +3567,11 @@
       "title": "BIM/Draft: faulty objects should display exclamation mark in Tree View",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29947",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-08",
-      "age_days": 122,
+      "age_days": 123,
       "comments": 0,
       "labels": [
         "Mod: BIM",
@@ -3142,6 +3581,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3151,6 +3591,7 @@
       "title": "BIM: not able to distinguish which Door/Window is selected when it is set as Opening",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29888",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-05-07",
@@ -3162,6 +3603,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3171,6 +3613,7 @@
       "title": "BIM: ArchSite code can be updated now that App::PropertyFloatConstraint and App::PropertyIntegerConstraint are saved",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27333",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-06",
@@ -3183,6 +3626,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3192,6 +3636,7 @@
       "title": "BIM: Project Setup dialog window width is too small",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20287",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-05-02",
@@ -3204,6 +3649,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3213,16 +3659,18 @@
       "title": "BIM: Covering objects should support additions and subtractions",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29698",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-04-29",
-      "age_days": 131,
+      "age_days": 132,
       "comments": 0,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -3232,6 +3680,7 @@
       "title": "BIM: Extrude default extrusion value",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20233",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-04-28",
@@ -3243,6 +3692,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3252,6 +3702,7 @@
       "title": "BIM: Default Baseline setting for the Arch_Wall",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/29512",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-04-21",
@@ -3262,6 +3713,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -3271,6 +3723,7 @@
       "title": "Core/App: Dependency on BIM module to get IfcOpenShell info",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26557",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-04-02",
@@ -3282,6 +3735,7 @@
         "Type: Code Quality"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3291,6 +3745,7 @@
       "title": "BIM/TechDraw - include Doors and Windows when selecting Site/Building/Level as a basis for TechDraw_View",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19370",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-03-28",
@@ -3303,6 +3758,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3312,6 +3768,7 @@
       "title": "BIM_Report: Changing order of statements",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26246",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Normal",
       "next_action": "Assigned",
       "updated": "2026-03-28",
@@ -3324,6 +3781,12 @@
       "assignees": [
         "furgo16"
       ],
+      "assignee_avatars": [
+        {
+          "login": "furgo16",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148809153?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3333,10 +3796,11 @@
       "title": "BIM: \"Clone Level Up\" tool  should be reorganized",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28606",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-03-26",
-      "age_days": 165,
+      "age_days": 166,
       "comments": 3,
       "labels": [
         "Mod: BIM",
@@ -3344,6 +3808,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": true
@@ -3353,10 +3818,11 @@
       "title": "BIM: Improvement / Ability of copy or multiply levels of a building with multiple levels",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24808",
       "author": "gianlucafiore",
+      "author_avatar": "https://avatars.githubusercontent.com/u/50465150?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-03-24",
-      "age_days": 167,
+      "age_days": 168,
       "comments": 5,
       "labels": [
         "Mod: BIM",
@@ -3364,6 +3830,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3373,6 +3840,7 @@
       "title": "BIM: Add the \"Window/Door Alignment\" property",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19552",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Normal",
       "next_action": "Needs reproduction",
       "updated": "2026-03-22",
@@ -3384,6 +3852,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3393,16 +3862,18 @@
       "title": "BIM: Array doesn't work for windows and doors",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/28439",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Normal",
       "next_action": "Needs triage",
       "updated": "2026-03-19",
-      "age_days": 172,
+      "age_days": 173,
       "comments": 4,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3412,6 +3883,7 @@
       "title": "BIM: BuildingPart still has a DiffuseColor property",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/26093",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-03-12",
@@ -3423,6 +3895,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3432,6 +3905,7 @@
       "title": "BIM: there are too many toolbar buttons",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25118",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-03-04",
@@ -3443,6 +3917,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3452,6 +3927,7 @@
       "title": "BIM/TechDraw: DraftView and ArchView appear to move on the page when objects are added to the view",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27812",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-23",
@@ -3463,6 +3939,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3472,6 +3949,7 @@
       "title": "CAM/BIM: Create a 2D nesting tool",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19576",
       "author": "yorikvanhavre",
+      "author_avatar": "https://avatars.githubusercontent.com/u/1136856?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-23",
@@ -3486,6 +3964,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3495,6 +3974,7 @@
       "title": "BIM: Automatic Hole depth of an arch window can't  get throug the second guest wall",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27666",
       "author": "markkomartin",
+      "author_avatar": "https://avatars.githubusercontent.com/u/199937677?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-22",
@@ -3506,6 +3986,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3515,6 +3996,7 @@
       "title": "(UI/UX) (Feature request) BIM object's important properties  shouldn't be  at the bottom of the property view panel",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24555",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-15",
@@ -3526,6 +4008,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3535,6 +4018,7 @@
       "title": "BIM: additions that are Arch objects do not move with the wall",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27288",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-14",
@@ -3545,6 +4029,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3554,6 +4039,7 @@
       "title": "BIM: Inform user on opening when IFC file in hybrid project is not accessible",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27537",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-13",
@@ -3565,6 +4051,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3574,6 +4061,7 @@
       "title": "BIM: BIM Setup command is too broad and not very BIM-specific",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25085",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-06",
@@ -3585,6 +4073,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3594,6 +4083,7 @@
       "title": "BIM: Default positions of 'Annotation Tools' and 'General Tools' toolbars",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/25116",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-05",
@@ -3605,6 +4095,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3614,10 +4105,11 @@
       "title": "Integrate a client for the buildingSMART Data Dictionary web service",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5607",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-02-04",
-      "age_days": 215,
+      "age_days": 216,
       "comments": 19,
       "labels": [
         "3rd party component",
@@ -3627,6 +4119,7 @@
         "no-auto-close"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3636,6 +4129,7 @@
       "title": "BIM: Baseless walls cannot be merged",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27207",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-01-29",
@@ -3646,6 +4140,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3655,6 +4150,7 @@
       "title": "BIM: The placement Z value should be adjusted automatically when copying objects between floor plans (Arch_Level) [Feature request]",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/27162",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-01-27",
@@ -3666,6 +4162,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": true
@@ -3675,6 +4172,7 @@
       "title": "[Draft/Bim] Add the \"auto-link to geometry\" checkbox to the \"Dimensions\" tool",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20646",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-01-08",
@@ -3686,6 +4184,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3695,16 +4194,18 @@
       "title": "BIM: Layer created in the BIM_Layers window have 'Hide Children' property set to 'true'",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19740",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-01-06",
-      "age_days": 244,
+      "age_days": 245,
       "comments": 5,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3714,6 +4215,7 @@
       "title": "BIM: Ability to modify window sill parameter `Sill height` _after_ window created",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20882",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2026-01-06",
@@ -3724,6 +4226,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3733,6 +4236,7 @@
       "title": "Draft/BIM: Improve parameterization of the \"Mirror\" tool",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20654",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-12-06",
@@ -3744,6 +4248,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3753,16 +4258,18 @@
       "title": "BIM: BIM_Copy option to copy the base object",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21343",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-12-04",
-      "age_days": 277,
+      "age_days": 278,
       "comments": 2,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3772,6 +4279,7 @@
       "title": "BIM: Arch_CurtainWall extend mullions property",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24602",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-11-20",
@@ -3782,6 +4290,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3791,6 +4300,7 @@
       "title": "BIM: Enable Draft Snap Widget and Draft Scale Widget within the workbench",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20785",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-11-08",
@@ -3803,6 +4313,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3812,6 +4323,7 @@
       "title": "BIM UI/UX: Reorganize BIM Workbench: Remove duplicate tools from Draft and Part WB",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24894",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-28",
@@ -3822,6 +4334,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3831,6 +4344,7 @@
       "title": "BIM: Proposal for usability improvements, from an architect and civil builder",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/14740",
       "author": "gianlucafiore",
+      "author_avatar": "https://avatars.githubusercontent.com/u/50465150?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-23",
@@ -3843,6 +4357,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3852,6 +4367,7 @@
       "title": "BIM: Ambiguous relationship between \"BIM\" material and \"Material WB\" material",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17176",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-21",
@@ -3863,6 +4379,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3872,6 +4389,7 @@
       "title": "BIM: The window does not make a hole in the cloned wall.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21628",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-21",
@@ -3882,6 +4400,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3891,6 +4410,7 @@
       "title": "BIM: Arch_Stairs no riser created on intermediate landing",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24456",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-21",
@@ -3901,6 +4421,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3910,10 +4431,11 @@
       "title": "BIM: Add option to Arch_Stairs for top tread level with landing/floor",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/8513",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-15",
-      "age_days": 327,
+      "age_days": 328,
       "comments": 5,
       "labels": [
         "Good first issue",
@@ -3921,6 +4443,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -3930,6 +4453,7 @@
       "title": "BIM: There's no way to mirror windows and doors along with walls.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/24369",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-04",
@@ -3941,6 +4465,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3950,6 +4475,7 @@
       "title": "BIM: Unlink base objects tool",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21344",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-10-03",
@@ -3960,6 +4486,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3969,16 +4496,18 @@
       "title": "BIM: Array with levels and walls does not take into account nesting.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21755",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-09-27",
-      "age_days": 345,
+      "age_days": 346,
       "comments": 7,
       "labels": [
         "Mod: BIM",
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -3988,6 +4517,7 @@
       "title": "BIM: Assigning IFC Properties using the Model panel buttons to FreeCAD objects confusing behavior",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23272",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-21",
@@ -4000,6 +4530,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4009,6 +4540,7 @@
       "title": "BIM: Create Arch_Space when several solids are selected",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23087",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-17",
@@ -4020,6 +4552,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4029,6 +4562,7 @@
       "title": "Draft/BIM: The search for the snap point is not correct (does not take into account the zoom on the screen).",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/23081",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-14",
@@ -4041,6 +4575,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4050,6 +4585,7 @@
       "title": "Arch: Handle multilayer walls - when joining walls together the layers should be unioned by material",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5680",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-10",
@@ -4062,6 +4598,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": "26.3",
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4071,6 +4613,7 @@
       "title": "BIM: Add support for IFC 4.3",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22979",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-08",
@@ -4082,6 +4625,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4091,6 +4635,7 @@
       "title": "BIM: Panel object is offset when Base is set afterwards",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22853",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-08-03",
@@ -4101,6 +4646,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4110,6 +4656,7 @@
       "title": "UI/UX : BIM  Arch_Grid dimensions are  not readable  if you have lots of columns",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22831",
       "author": "ErtugrulEge",
+      "author_avatar": "https://avatars.githubusercontent.com/u/146654654?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-07-30",
@@ -4121,6 +4668,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4130,6 +4678,7 @@
       "title": "BIM: too many task options",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/22731",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-07-28",
@@ -4142,6 +4691,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4151,6 +4701,7 @@
       "title": "BIM: Optimize the behavior of the \"Move with host\" /\"Host\" property for all architectural components (except windows and doors).",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21977",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-06-29",
@@ -4161,6 +4712,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4170,6 +4722,7 @@
       "title": "BIM. Exclude placing windows/doors outside the floor/level",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21910",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-06-13",
@@ -4180,6 +4733,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4189,6 +4743,7 @@
       "title": "Core: importers/exporters source code should be decoupled from the BIM workbench",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21721",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-06-05",
@@ -4201,6 +4756,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4210,6 +4766,7 @@
       "title": "BIM: Default wall height should use level height",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18733",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-30",
@@ -4221,6 +4778,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4230,6 +4788,7 @@
       "title": "BIM: Add an algorithm for replacing/correcting windows, columns and beams via the taskbar.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21438",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-26",
@@ -4242,6 +4801,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4251,6 +4811,7 @@
       "title": "BIM: Better organization of IFC Classification information in IFC models",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21436",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-19",
@@ -4263,6 +4824,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4272,6 +4834,7 @@
       "title": "BIM: IfcQuantitySet not exported to IFC file",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21363",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-18",
@@ -4283,6 +4846,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4292,6 +4856,7 @@
       "title": "BIM: Views Panel - enable selection of multiple objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21024",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-07",
@@ -4303,6 +4868,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4312,6 +4878,7 @@
       "title": "BIM: TDView - if no page is selected, offer user an option on which page to place the view (proposal: make a DlgPageChooser available via python)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19469",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-07",
@@ -4324,6 +4891,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4333,10 +4901,11 @@
       "title": "Core: Actions, commands and interface do not take into account which document is currently active.  (Document isolation)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19664",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-04",
-      "age_days": 491,
+      "age_days": 492,
       "comments": 5,
       "labels": [
         "Mod: BIM",
@@ -4345,6 +4914,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4354,6 +4924,7 @@
       "title": "BIM/UX: Improve the logic of building architectural models (document structuring issue)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21021",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-02",
@@ -4364,6 +4935,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4373,6 +4945,7 @@
       "title": "BIM: Implement GBXML export",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5654",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-02",
@@ -4387,6 +4960,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4396,6 +4975,7 @@
       "title": "BIM: Add the ability to select a base for a wall/beam/column object from the taskbar  panel.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21034",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-04-29",
@@ -4406,6 +4986,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4415,6 +4996,7 @@
       "title": "BIM: Add the ability to save and delete wall presets (without multimaterials).",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21033",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-04-29",
@@ -4427,6 +5009,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4436,6 +5019,7 @@
       "title": "BIM: Group objects should not be available as base for new BIM objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21012",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-04-27",
@@ -4446,6 +5030,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4455,6 +5040,7 @@
       "title": "BIM/Draft: Reordering children for layers does not work",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/21010",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-04-27",
@@ -4467,6 +5053,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4476,6 +5063,7 @@
       "title": "BIM: Arch Wall does not provide inner area",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/13813",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-28",
@@ -4487,6 +5075,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4496,6 +5085,7 @@
       "title": "Arch: Reflected Ceiling Plan",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5738",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-16",
@@ -4509,6 +5099,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4518,6 +5114,7 @@
       "title": "BIM: IfcElements confusing behavior when creating first material in the document",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/20099",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-12",
@@ -4529,6 +5126,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4538,10 +5136,11 @@
       "title": "BIM: Support IfcProfileDef (usecase: convert a non-NativeIFC FreeCAD 2D object to an IfcProfileDef)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5641",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-10",
-      "age_days": 546,
+      "age_days": 547,
       "comments": 2,
       "labels": [
         "Mod: BIM",
@@ -4549,6 +5148,12 @@
       ],
       "assignees": [
         "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,
@@ -4559,10 +5164,11 @@
       "title": "BIM: workbench Walls tool ignores splines in sketches",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/8370",
       "author": "macdroid53",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6831752?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-10",
-      "age_days": 546,
+      "age_days": 547,
       "comments": 1,
       "labels": [
         "Help wanted",
@@ -4570,6 +5176,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4579,10 +5186,11 @@
       "title": "BIM: Import IFC Locked/UnLocked Mode has different behavior of same import strategy",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16806",
       "author": "hoshengwei",
+      "author_avatar": "https://avatars.githubusercontent.com/u/16606394?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-10",
-      "age_days": 546,
+      "age_days": 547,
       "comments": 5,
       "labels": [
         "File format: IFC",
@@ -4590,6 +5198,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4599,6 +5208,7 @@
       "title": "BIM: Arch_Space label cannot be rotated",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18952",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-03-04",
@@ -4612,6 +5222,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4621,6 +5237,7 @@
       "title": "[BIM] Add automatic calculations of z-coordinates for overlying levels and height of elements.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19779",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-26",
@@ -4631,6 +5248,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4640,6 +5258,7 @@
       "title": "[Sketcher/Draft/Arch/Bim] Reverses the direction of sketch elements.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/11957",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4652,6 +5271,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4661,6 +5281,7 @@
       "title": "BIM: subvolume stuck at origin when inserting custom preset window",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19345",
       "author": "furgo16",
+      "author_avatar": "https://avatars.githubusercontent.com/u/148809153?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4673,6 +5294,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4682,6 +5304,7 @@
       "title": "BIM: Support material properties in IFC",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5657",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4694,6 +5317,12 @@
       ],
       "assignees": [
         "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,
@@ -4704,6 +5333,7 @@
       "title": "BIM: Add a set of structural nodes tools",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5638",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4716,6 +5346,12 @@
       ],
       "assignees": [
         "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,
@@ -4726,6 +5362,7 @@
       "title": "Arch: Room finish marks",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5740",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4739,6 +5376,12 @@
       ],
       "assignees": [
         "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,
@@ -4749,6 +5392,7 @@
       "title": "Arch: Door/Window marks",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5741",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4763,48 +5407,11 @@
       "assignees": [
         "yorikvanhavre"
       ],
-      "milestone": null,
-      "has_attachment": false,
-      "has_reproducer_hint": false
-    },
-    {
-      "number": 5739,
-      "title": "BIM: Auto section/elev marks from section plane",
-      "url": "https://github.com/FreeCAD/FreeCAD/issues/5739",
-      "author": "FreeCAD-Bug-Importer",
-      "priority": "Stale candidate",
-      "next_action": "Recheck or close",
-      "updated": "2025-02-22",
-      "age_days": 563,
-      "comments": 5,
-      "labels": [
-        "Good first issue",
-        "Mod: BIM",
-        "Type: Feature"
-      ],
-      "assignees": [
-        "yorikvanhavre"
-      ],
-      "milestone": null,
-      "has_attachment": false,
-      "has_reproducer_hint": false
-    },
-    {
-      "number": 5734,
-      "title": "BIM: Taper for structural objects",
-      "url": "https://github.com/FreeCAD/FreeCAD/issues/5734",
-      "author": "FreeCAD-Bug-Importer",
-      "priority": "Stale candidate",
-      "next_action": "Recheck or close",
-      "updated": "2025-02-22",
-      "age_days": 563,
-      "comments": 3,
-      "labels": [
-        "Mod: BIM",
-        "Type: Feature"
-      ],
-      "assignees": [
-        "yorikvanhavre"
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,
@@ -4815,6 +5422,7 @@
       "title": "BIM: Export meshes to IFC and handle hi-res objects",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/5736",
       "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4827,6 +5435,69 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
+      "milestone": null,
+      "has_attachment": false,
+      "has_reproducer_hint": false
+    },
+    {
+      "number": 5739,
+      "title": "BIM: Auto section/elev marks from section plane",
+      "url": "https://github.com/FreeCAD/FreeCAD/issues/5739",
+      "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
+      "priority": "Stale candidate",
+      "next_action": "Recheck or close",
+      "updated": "2025-02-22",
+      "age_days": 563,
+      "comments": 5,
+      "labels": [
+        "Good first issue",
+        "Mod: BIM",
+        "Type: Feature"
+      ],
+      "assignees": [
+        "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
+      "milestone": null,
+      "has_attachment": false,
+      "has_reproducer_hint": false
+    },
+    {
+      "number": 5734,
+      "title": "BIM: Taper for structural objects",
+      "url": "https://github.com/FreeCAD/FreeCAD/issues/5734",
+      "author": "FreeCAD-Bug-Importer",
+      "author_avatar": "https://avatars.githubusercontent.com/u/98176632?v=4",
+      "priority": "Stale candidate",
+      "next_action": "Recheck or close",
+      "updated": "2025-02-22",
+      "age_days": 563,
+      "comments": 3,
+      "labels": [
+        "Mod: BIM",
+        "Type: Feature"
+      ],
+      "assignees": [
+        "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4836,6 +5507,7 @@
       "title": "BIM: Draft_Offset and BIM_Offset2D are confusing",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/14784",
       "author": "marcuspollio",
+      "author_avatar": "https://avatars.githubusercontent.com/u/131592747?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4851,6 +5523,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4860,6 +5538,7 @@
       "title": "BIM: Add option to exclude invisble objects from IFC export",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16293",
       "author": "Roy-043",
+      "author_avatar": "https://avatars.githubusercontent.com/u/70520633?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4873,6 +5552,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -4882,6 +5567,7 @@
       "title": "Draft/Bim: Array + mirror in different combinations show non-obvious results.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16751",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4894,6 +5580,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4903,6 +5590,7 @@
       "title": "BIM: The \"manager IFC quantity\"  does not take into account mirror elements.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16573",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4915,6 +5603,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4924,6 +5618,7 @@
       "title": "BIM+TechDraw: Problem displaying doors on plans, facades and sections.",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16450",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4936,6 +5631,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4945,6 +5641,7 @@
       "title": "TechDraw/BIM: Add the ability to specify elevation marks",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/16841",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4958,6 +5655,7 @@
         "Type: Has workaround"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4967,6 +5665,7 @@
       "title": "BIM: Add warning when switching to and from strict IFC mode",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17147",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -4979,6 +5678,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -4988,6 +5688,7 @@
       "title": "BIM: Support for dotBIM",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18122",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5000,6 +5701,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -5009,6 +5711,7 @@
       "title": "BIM: Add the \"Volume\" property to the main parameters of architectural components. (Feature request)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/17811",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5019,6 +5722,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -5028,6 +5732,7 @@
       "title": "BIM: Label of saved IFC file in project tree does not change according to the saved file name",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18193",
       "author": "semhustej",
+      "author_avatar": "https://avatars.githubusercontent.com/u/149316569?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5042,6 +5747,12 @@
       "assignees": [
         "yorikvanhavre"
       ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
+      ],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -5051,6 +5762,7 @@
       "title": "BIM: add file support for SH3 files (used in Sweet Home 3D) to be able to use their furniture in BIM",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18189",
       "author": "Mannshoch",
+      "author_avatar": "https://avatars.githubusercontent.com/u/7795891?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5064,6 +5776,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -5073,6 +5786,7 @@
       "title": "BIM: Beam skew (feature request)",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18133",
       "author": "kaiwas",
+      "author_avatar": "https://avatars.githubusercontent.com/u/32273833?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5084,6 +5798,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": true,
       "has_reproducer_hint": false
@@ -5093,6 +5808,7 @@
       "title": "Ifc merge port to freecad",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18112",
       "author": "Isaina",
+      "author_avatar": "https://avatars.githubusercontent.com/u/139703163?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5104,25 +5820,7 @@
         "Type: Feature"
       ],
       "assignees": [],
-      "milestone": null,
-      "has_attachment": false,
-      "has_reproducer_hint": false
-    },
-    {
-      "number": 18732,
-      "title": "BIM: Ability to save current object settings as preset (wall, window, door,...)",
-      "url": "https://github.com/FreeCAD/FreeCAD/issues/18732",
-      "author": "maxwxyz",
-      "priority": "Stale candidate",
-      "next_action": "Recheck or close",
-      "updated": "2025-02-22",
-      "age_days": 563,
-      "comments": 3,
-      "labels": [
-        "Mod: BIM",
-        "Type: Feature"
-      ],
-      "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -5132,6 +5830,7 @@
       "title": "BIM: Trimex for straight wall segments start/end face",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/18730",
       "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5143,6 +5842,28 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
+      "milestone": null,
+      "has_attachment": false,
+      "has_reproducer_hint": false
+    },
+    {
+      "number": 18732,
+      "title": "BIM: Ability to save current object settings as preset (wall, window, door,...)",
+      "url": "https://github.com/FreeCAD/FreeCAD/issues/18732",
+      "author": "maxwxyz",
+      "author_avatar": "https://avatars.githubusercontent.com/u/6246609?v=4",
+      "priority": "Stale candidate",
+      "next_action": "Recheck or close",
+      "updated": "2025-02-22",
+      "age_days": 563,
+      "comments": 3,
+      "labels": [
+        "Mod: BIM",
+        "Type: Feature"
+      ],
+      "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -5152,6 +5873,7 @@
       "title": "BIM: Implementation of Ifc5D in quantity manager",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19186",
       "author": "Moult",
+      "author_avatar": "https://avatars.githubusercontent.com/u/88302?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5162,6 +5884,7 @@
         "Type: Feature"
       ],
       "assignees": [],
+      "assignee_avatars": [],
       "milestone": null,
       "has_attachment": false,
       "has_reproducer_hint": false
@@ -5171,6 +5894,7 @@
       "title": "BIM: Window tool button and Door tool button reversed",
       "url": "https://github.com/FreeCAD/FreeCAD/issues/19101",
       "author": "jag45",
+      "author_avatar": "https://avatars.githubusercontent.com/u/123576926?v=4",
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-02-22",
@@ -5182,6 +5906,12 @@
       ],
       "assignees": [
         "yorikvanhavre"
+      ],
+      "assignee_avatars": [
+        {
+          "login": "yorikvanhavre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1136856?v=4"
+        }
       ],
       "milestone": null,
       "has_attachment": false,

@@ -45,25 +45,31 @@ function labelsHtml(labels) {
   return visible + (labels?.length > 4 ? `<span>+${labels.length - 4}</span>` : "");
 }
 
+function avatarHtml(url, className = "avatar") {
+  if (!url) return "";
+  return `<img class="${className}" src="${escapeHtml(url)}" alt="" loading="lazy" width="24" height="24">`;
+}
+
 function renderPr(item) {
   const size = `+${item.additions} / −${item.deletions} · ${item.changed_files} files`;
   return `<article class="pr-card"><div class="card-main">
     <div class="badges"><span class="priority priority-${priorityClass(item.priority)}">${escapeHtml(item.priority)}</span><span class="status">${item.draft ? "Draft" : "Ready"}</span></div>
     <h2><a href="${escapeHtml(item.url)}">#${item.number} ${escapeHtml(item.title)}</a></h2>
-    <p>by <strong>@${escapeHtml(item.author)}</strong> · updated ${item.age_days}d ago</p>
+    <p class="byline">${avatarHtml(item.author_avatar)}<span>by <strong>@${escapeHtml(item.author)}</strong> · updated ${item.age_days}d ago</span></p>
     <div class="labels">${labelsHtml(item.labels)}</div>
   </div><dl><div><dt>Change</dt><dd>${size}</dd></div><div><dt>Merge state</dt><dd>${escapeHtml(item.merge_state)}</dd></div></dl></article>`;
 }
 
 function renderIssue(item) {
   const assigned = item.assignees.length ? item.assignees.map((name) => `@${escapeHtml(name)}`).join(", ") : "Unassigned";
+  const assigneeAvatars = (item.assignee_avatars || []).map((person) => avatarHtml(person.avatar_url, "avatar avatar-small")).join("");
   const signals = [item.has_reproducer_hint ? "Repro details" : null, item.has_attachment ? "Attachment" : null, item.milestone ? `Milestone: ${escapeHtml(item.milestone)}` : null].filter(Boolean);
   return `<article class="pr-card issue-card"><div class="card-main">
     <div class="badges"><span class="priority priority-${priorityClass(item.priority)}">${escapeHtml(item.priority)}</span><span class="status">${escapeHtml(item.next_action)}</span>${signals.map((signal) => `<span class="signal">${signal}</span>`).join("")}</div>
     <h2><a href="${escapeHtml(item.url)}">#${item.number} ${escapeHtml(item.title)}</a></h2>
-    <p>by <strong>@${escapeHtml(item.author)}</strong> · updated ${item.age_days}d ago</p>
+    <p class="byline">${avatarHtml(item.author_avatar)}<span>by <strong>@${escapeHtml(item.author)}</strong> · updated ${item.age_days}d ago</span></p>
     <div class="labels">${labelsHtml(item.labels)}</div>
-  </div><dl><div><dt>Assignee</dt><dd>${assigned}</dd></div><div><dt>Discussion</dt><dd>${item.comments} comments</dd></div></dl></article>`;
+  </div><dl><div><dt>Assignee</dt><dd class="assignees">${assigneeAvatars}<span>${assigned}</span></dd></div><div><dt>Discussion</dt><dd>${item.comments} comments</dd></div></dl></article>`;
 }
 
 function currentItems() {

@@ -23,7 +23,7 @@ def pull_request(*, author="contributor", draft=False, updated="2026-09-08T00:00
         "deletions": 2,
         "changedFiles": 1,
         "mergeStateStatus": "CLEAN",
-        "author": {"login": author},
+        "author": {"login": author, "avatar_url": f"https://avatars.example/{author}"},
         "labels": {"nodes": [{"name": "Mod: BIM"}]},
         "files": {"nodes": [{"path": "src/Mod/BIM/example.py"}]},
         "reviews": {"totalCount": 0, "nodes": []},
@@ -45,6 +45,11 @@ class DashboardTest(unittest.TestCase):
 
     def test_unreviewed_pr_is_included(self):
         self.assertTrue(dashboard.needs_review(pull_request(), {"tritao", "roy-043"}))
+
+    def test_normalized_pr_includes_author_avatar(self):
+        now = dt.datetime(2026, 9, 8, tzinfo=dt.timezone.utc)
+        item = dashboard.normalize(pull_request(author="contributor"), now)
+        self.assertEqual(item["author_avatar"], "https://avatars.example/contributor")
 
     def test_priority_distinguishes_ready_and_old_drafts(self):
         now = dt.datetime(2026, 9, 8, tzinfo=dt.timezone.utc)

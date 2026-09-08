@@ -67,6 +67,9 @@ input { width: min(330px, 42vw); padding: 8px 12px; }
 .pr-card h2 a { text-decoration: none; }
 .pr-card h2 a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
 .pr-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+.byline, .assignees { display: flex; align-items: center; gap: 8px; }
+.avatar { width: 24px; height: 24px; flex: none; border-radius: 50%; background: #e4e9e5; }
+.avatar-small { width: 20px; height: 20px; margin-right: -3px; }
 .badges, .labels { display: flex; flex-wrap: wrap; gap: 6px; }
 .badges span, .labels span { border-radius: 99px; padding: 3px 9px; background: #eef1ee; font-size: .76rem; font-weight: 650; }
 .priority-high { background: var(--orange-pale) !important; color: var(--orange); }

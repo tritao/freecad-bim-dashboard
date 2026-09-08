@@ -78,7 +78,10 @@ def fetch_pull_requests(
                 "deletions": detail["deletions"],
                 "changedFiles": detail["changed_files"],
                 "mergeStateStatus": detail["mergeable_state"].upper(),
-                "author": {"login": detail["user"]["login"]} if detail.get("user") else None,
+                "author": {
+                    "login": detail["user"]["login"],
+                    "avatar_url": detail["user"]["avatar_url"],
+                } if detail.get("user") else None,
                 "labels": {"nodes": [{"name": item["name"]} for item in detail["labels"]]},
                 "reviews": {
                     "nodes": [
@@ -170,6 +173,7 @@ def normalize(pr: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
         "title": pr["title"],
         "url": pr["url"],
         "author": (pr.get("author") or {}).get("login", "ghost"),
+        "author_avatar": (pr.get("author") or {}).get("avatar_url"),
         "draft": pr["isDraft"],
         "priority": priority(pr, now),
         "updated": pr["updatedAt"][:10],
@@ -227,6 +231,7 @@ def normalize_issue(issue: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
         "title": issue["title"],
         "url": issue["html_url"],
         "author": (issue.get("user") or {}).get("login", "ghost"),
+        "author_avatar": (issue.get("user") or {}).get("avatar_url"),
         "priority": issue_priority(labels, issue["title"], age_days),
         "next_action": issue_next_action(labels, bool(assignees), has_reproducer, age_days),
         "updated": issue["updated_at"][:10],
@@ -234,6 +239,10 @@ def normalize_issue(issue: dict[str, Any], now: dt.datetime) -> dict[str, Any]:
         "comments": issue["comments"],
         "labels": sorted(labels),
         "assignees": assignees,
+        "assignee_avatars": [
+            {"login": item["login"], "avatar_url": item.get("avatar_url")}
+            for item in issue.get("assignees", [])
+        ],
         "milestone": (issue.get("milestone") or {}).get("title"),
         "has_attachment": "github.com/user-attachments/" in body,
         "has_reproducer_hint": has_reproducer,
