@@ -88,7 +88,7 @@ class DashboardTest(unittest.TestCase):
                 [item], "FreeCAD/FreeCAD", "Mod: BIM", ["tritao", "Roy-043"], now
             )
         )
-        self.assertEqual(report["schema_version"], 2)
+        self.assertEqual(report["schema_version"], 3)
         self.assertEqual(report["repository"], "FreeCAD/FreeCAD")
         self.assertEqual(report["items"][0]["number"], 42)
 
@@ -112,6 +112,19 @@ class DashboardTest(unittest.TestCase):
         self.assertEqual(
             dashboard.issue_next_action({"Mod: BIM"}, False, True, 200), "Recheck or close"
         )
+
+    def test_meeting_markdown_extracts_topics_and_actions(self):
+        document = dashboard.parse_meeting_document(
+            "# BIM meeting — 8 September 2026\n\n## Overview\nText\n\n"
+            "## IFC direction\n\n- [ ] @tritao Publish draft\n- [x] Review issue\n",
+            "Minutes/2026-09-08.md",
+            "https://github.com/example/notes",
+            "Minutes",
+        )
+        self.assertEqual(document["date"], "2026-09-08")
+        self.assertEqual(document["topics"], ["IFC direction"])
+        self.assertEqual(document["actions"][0], {"completed": False, "text": "@tritao Publish draft"})
+        self.assertTrue(document["actions"][1]["completed"])
 
 
 if __name__ == "__main__":

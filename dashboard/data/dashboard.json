@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "generated_at": "2026-09-08T18:53:01+00:00",
+  "schema_version": 3,
+  "generated_at": "2026-09-08T19:45:21+00:00",
   "repository": "FreeCAD/FreeCAD",
   "label": "Mod: BIM",
   "excluded_reviewers": [
@@ -37,7 +37,7 @@
       "additions": 706,
       "deletions": 12,
       "changed_files": 4,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Requires: UI/UX review",
@@ -59,7 +59,7 @@
       "additions": 715,
       "deletions": 78,
       "changed_files": 11,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Mod: Draft",
@@ -82,7 +82,7 @@
       "additions": 890,
       "deletions": 0,
       "changed_files": 6,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Feature",
@@ -105,7 +105,7 @@
       "additions": 720,
       "deletions": 0,
       "changed_files": 4,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Feature",
@@ -128,7 +128,7 @@
       "additions": 127,
       "deletions": 168,
       "changed_files": 2,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Type: Bug",
         "Mod: BIM"
@@ -147,7 +147,7 @@
       "additions": 77,
       "deletions": 33,
       "changed_files": 2,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Feature",
@@ -169,7 +169,7 @@
       "additions": 1418,
       "deletions": 26,
       "changed_files": 4,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Feature",
@@ -192,7 +192,7 @@
       "additions": 2328,
       "deletions": 26,
       "changed_files": 9,
-      "merge_state": "BEHIND",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Feature",
@@ -215,7 +215,7 @@
       "additions": 116,
       "deletions": 174,
       "changed_files": 8,
-      "merge_state": "DIRTY",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Other"
@@ -234,7 +234,7 @@
       "additions": 15,
       "deletions": 1,
       "changed_files": 9,
-      "merge_state": "DIRTY",
+      "merge_state": "UNKNOWN",
       "labels": [
         "Mod: BIM",
         "Type: Other"
@@ -4928,7 +4928,7 @@
       "priority": "Stale candidate",
       "next_action": "Recheck or close",
       "updated": "2025-05-02",
-      "age_days": 493,
+      "age_days": 494,
       "comments": 9,
       "labels": [
         "Mod: BIM",
@@ -5917,5 +5917,50 @@
       "has_attachment": false,
       "has_reproducer_hint": false
     }
-  ]
+  ],
+  "meetings": {
+    "repository": "tritao/bim-meeting-notes",
+    "agendas": [],
+    "minutes": [
+      {
+        "kind": "Minutes",
+        "date": "2026-09-08",
+        "title": "FreeCAD BIM Meeting Notes \u2014 8 September 2026",
+        "path": "Minutes/2026-09-08.md",
+        "url": "https://github.com/tritao/bim-meeting-notes/blob/main/Minutes/2026-09-08.md",
+        "topics": [
+          "Summer of Code / mentoring",
+          "IFC strategy and strict IFC mode",
+          "2D documentation and the 3D \u2192 2D workflow",
+          "Roadmap and contributor coordination",
+          "BIM architecture and core-object refactoring",
+          "Existing tools vs. replacement tools",
+          "Stair designer and integrating large contributions",
+          "Current release priorities",
+          "Meeting notes and agenda organization",
+          "Next meeting"
+        ],
+        "actions": []
+      },
+      {
+        "kind": "Minutes",
+        "date": "2026-09-01",
+        "title": "FreeCAD BIM Meeting Notes",
+        "path": "Minutes/2026-09-01.md",
+        "url": "https://github.com/tritao/bim-meeting-notes/blob/main/Minutes/2026-09-01.md",
+        "topics": [
+          "Meeting organization",
+          "BIM roadmap",
+          "Development priorities and typing",
+          "PR reviews and BIM maintenance",
+          "Upcoming release / open PRs",
+          "IFC / IFCx involvement",
+          "Arch \u2192 BIM naming cleanup",
+          "Next meeting"
+        ],
+        "actions": []
+      }
+    ],
+    "actions": []
+  }
 }

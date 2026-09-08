@@ -17,6 +17,12 @@ const views = {
     github: "https://github.com/FreeCAD/FreeCAD/issues?q=is%3Aissue+is%3Aopen+label%3A%22Mod%3A+BIM%22",
     filters: [["all", "All"], ["triage", "Needs triage"], ["confirmed", "Confirmed"], ["repro", "Needs reproduction"], ["unassigned", "Unassigned"], ["stale", "Stale"]],
   },
+  meetings: {
+    title: "BIM meetings and follow-ups",
+    intro: "Agendas, recent discussions, and action items in one place.",
+    github: "https://github.com/tritao/bim-meeting-notes",
+    filters: [["all", "All"], ["upcoming", "Upcoming agendas"], ["actions", "Open actions"], ["minutes", "Minutes"]],
+  },
 };
 
 function escapeHtml(value) {
@@ -37,6 +43,9 @@ function matchesFilter(item) {
   if (state.filter === "repro") return item.next_action === "Needs reproduction";
   if (state.filter === "unassigned") return item.assignees?.length === 0;
   if (state.filter === "stale") return item.priority === "Stale candidate";
+  if (state.filter === "upcoming") return item.kind === "Agendas" && item.date >= new Date().toISOString().slice(0, 10);
+  if (state.filter === "actions") return item.actions?.some((action) => !action.completed);
+  if (state.filter === "minutes") return item.kind === "Minutes";
   return true;
 }
 
@@ -72,25 +81,46 @@ function renderIssue(item) {
   </div><dl><div><dt>Assignee</dt><dd class="assignees">${assigneeAvatars}<span>${assigned}</span></dd></div><div><dt>Discussion</dt><dd>${item.comments} comments</dd></div></dl></article>`;
 }
 
+function renderMeeting(item) {
+  const openActions = item.actions.filter((action) => !action.completed);
+  const topics = item.topics.slice(0, 5);
+  return `<article class="pr-card meeting-card"><div class="card-main">
+    <div class="badges"><span class="priority priority-normal">${item.kind === "Agendas" ? "Agenda" : "Minutes"}</span>${openActions.length ? `<span class="status">${openActions.length} open action${openActions.length === 1 ? "" : "s"}</span>` : ""}</div>
+    <h2><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h2>
+    <p>${item.date ? new Date(`${item.date}T12:00:00Z`).toLocaleDateString(undefined, { dateStyle: "long", timeZone: "UTC" }) : escapeHtml(item.path)}</p>
+    ${topics.length ? `<ul class="topics">${topics.map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}</ul>` : ""}
+    ${openActions.length ? `<div class="meeting-actions"><strong>Open actions</strong>${openActions.map((action) => `<p>○ ${escapeHtml(action.text)}</p>`).join("")}</div>` : ""}
+  </div><dl><div><dt>Topics</dt><dd>${item.topics.length}</dd></div><div><dt>Actions</dt><dd>${openActions.length} open · ${item.actions.length} total</dd></div></dl></article>`;
+}
+
 function currentItems() {
-  return state.mode === "prs" ? state.data.items : state.data.issues;
+  if (state.mode === "prs") return state.data.items;
+  if (state.mode === "issues") return state.data.issues;
+  return [...state.data.meetings.agendas, ...state.data.meetings.minutes];
 }
 
 function render() {
   const query = state.query.toLocaleLowerCase();
   const visible = currentItems().filter((item) => {
-    const searchable = [item.number, item.title, item.author, ...(item.labels || []), ...(item.assignees || [])].join(" ").toLocaleLowerCase();
+    const searchable = [item.number, item.title, item.author, ...(item.labels || []), ...(item.assignees || []), ...(item.topics || []), ...(item.actions || []).map((action) => action.text)].join(" ").toLocaleLowerCase();
     return matchesFilter(item) && searchable.includes(query);
   });
-  queue.innerHTML = visible.map(state.mode === "prs" ? renderPr : renderIssue).join("");
+  const renderer = state.mode === "prs" ? renderPr : state.mode === "issues" ? renderIssue : renderMeeting;
+  queue.innerHTML = visible.map(renderer).join("");
   empty.hidden = visible.length !== 0;
 }
 
 function setSummary() {
   const items = currentItems();
-  const values = state.mode === "prs"
-    ? [[items.filter((item) => !item.draft).length, "Ready"], [items.filter((item) => item.draft).length, "Drafts"], [items.filter((item) => item.priority === "Stale candidate").length, "Stale candidates"]]
-    : [[items.length, "Open issues"], [items.filter((item) => item.priority === "Confirmed").length, "Confirmed"], [items.filter((item) => item.next_action === "Needs triage").length, "Needs triage"]];
+  let values;
+  if (state.mode === "prs") {
+    values = [[items.filter((item) => !item.draft).length, "Ready"], [items.filter((item) => item.draft).length, "Drafts"], [items.filter((item) => item.priority === "Stale candidate").length, "Stale candidates"]];
+  } else if (state.mode === "issues") {
+    values = [[items.length, "Open issues"], [items.filter((item) => item.priority === "Confirmed").length, "Confirmed"], [items.filter((item) => item.next_action === "Needs triage").length, "Needs triage"]];
+  } else {
+    const today = new Date().toISOString().slice(0, 10);
+    values = [[state.data.meetings.agendas.filter((item) => item.date >= today).length, "Upcoming agendas"], [state.data.meetings.minutes.length, "Meeting notes"], [state.data.meetings.actions.filter((action) => !action.completed).length, "Open actions"]];
+  }
   values.forEach(([count, label], index) => {
     document.querySelector(`#count-${index + 1}`).textContent = count;
     document.querySelector(`#label-${index + 1}`).textContent = label;
@@ -103,7 +133,12 @@ function setMode(mode) {
   const view = views[mode];
   document.querySelector("#page-title").textContent = view.title;
   document.querySelector("#page-intro").textContent = view.intro;
-  document.querySelector("#github-link").href = view.github;
+  document.querySelector("#search").placeholder = mode === "meetings"
+    ? "Search meetings, topics, actions…"
+    : "Search titles, authors, labels…";
+  document.querySelector("#github-link").href = mode === "meetings"
+    ? `https://github.com/${state.data.meetings.repository}`
+    : view.github;
   document.querySelectorAll("[data-mode]").forEach((button) => button.classList.toggle("active", button.dataset.mode === mode));
   filters.innerHTML = view.filters.map(([value, label], index) => `<button class="${index === 0 ? "active" : ""}" data-filter="${value}">${label}</button>`).join("");
   filters.querySelectorAll("[data-filter]").forEach((button) => button.addEventListener("click", () => {
@@ -114,15 +149,19 @@ function setMode(mode) {
   }));
   const reviewers = state.data.excluded_reviewers.map((name) => `@${name}`).join(" or ");
   const hidden = state.data.incidental_prs?.length || 0;
-  document.querySelector("#context").textContent = mode === "prs"
-    ? `No activity from ${reviewers}.${hidden ? ` ${hidden} broad PRs with only incidental BIM changes hidden.` : ""}`
-    : "Reproduction and attachment indicators are conservative hints based on the issue report.";
+  if (mode === "prs") {
+    document.querySelector("#context").textContent = `No activity from ${reviewers}.${hidden ? ` ${hidden} broad PRs with only incidental BIM changes hidden.` : ""}`;
+  } else if (mode === "issues") {
+    document.querySelector("#context").textContent = "Reproduction and attachment indicators are conservative hints based on the issue report.";
+  } else {
+    document.querySelector("#context").innerHTML = `Meeting files remain authoritative. <a href="https://github.com/${escapeHtml(state.data.meetings.repository)}/new/main/Agendas">Add an agenda ↗</a>`;
+  }
   setSummary();
   render();
 }
 
 document.querySelectorAll("[data-mode]").forEach((button) => button.addEventListener("click", () => {
-  window.location.hash = button.dataset.mode === "issues" ? "issues" : "";
+  window.location.hash = button.dataset.mode === "prs" ? "" : button.dataset.mode;
   setMode(button.dataset.mode);
 }));
 document.querySelector("#search").addEventListener("input", (event) => { state.query = event.target.value.trim(); render(); });
@@ -130,9 +169,10 @@ document.querySelector("#search").addEventListener("input", (event) => { state.q
 fetch("data/dashboard.json")
   .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
   .then((data) => {
-    if (data.schema_version !== 2 || !Array.isArray(data.items) || !Array.isArray(data.issues)) throw new Error("Unsupported data format");
+    if (data.schema_version !== 3 || !Array.isArray(data.items) || !Array.isArray(data.issues) || !data.meetings) throw new Error("Unsupported data format");
     state.data = data;
     document.querySelector("#updated").textContent = data.generated_at ? `Updated ${new Date(data.generated_at).toLocaleString()}` : "Awaiting the first data refresh";
-    setMode(window.location.hash === "#issues" ? "issues" : "prs");
+    const requestedMode = window.location.hash.slice(1);
+    setMode(views[requestedMode] ? requestedMode : "prs");
   })
   .catch(() => { document.querySelector("#updated").textContent = "Queue unavailable"; error.hidden = false; });

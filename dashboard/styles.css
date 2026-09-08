@@ -78,6 +78,9 @@ input { width: min(330px, 42vw); padding: 8px 12px; }
 .signal { background: #eef1ee !important; color: var(--muted); }
 .labels { margin-top: 14px; }
 .labels span { color: var(--muted); font-weight: 500; }
+.topics { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 16px 0 0; padding-left: 20px; color: var(--muted); font-size: .88rem; }
+.meeting-actions { margin-top: 18px; padding: 14px 16px; border-radius: 9px; background: var(--paper); }
+.meeting-actions p { margin-top: 5px; color: var(--ink); }
 dl { min-width: 225px; margin: 0; padding-left: 24px; border-left: 1px solid var(--line); }
 dl div + div { margin-top: 12px; }
 dt { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; }

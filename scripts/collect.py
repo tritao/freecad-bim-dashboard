@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import json
+import re
 import subprocess
 import sys
 import time
@@ -105,6 +107,59 @@ def fetch_pull_requests(
 def fetch_issues(repository: str, label: str) -> list[dict[str, Any]]:
     """Fetch all open issues carrying the requested label."""
     return search_issues(f'repo:{repository} is:issue is:open label:"{label}"')
+
+
+def parse_meeting_document(
+    content: str, path: str, url: str, kind: str
+) -> dict[str, Any]:
+    """Extract predictable meeting metadata from ordinary Markdown."""
+    filename = Path(path).name
+    date_match = re.match(r"(\d{4}-\d{2}-\d{2})", filename)
+    meeting_date = date_match.group(1) if date_match else None
+    title_match = re.search(r"^#\s+(.+)$", content, re.MULTILINE)
+    topics = [
+        heading.strip()
+        for heading in re.findall(r"^##\s+(.+)$", content, re.MULTILINE)
+        if heading.strip().casefold() not in {"overview", "action items"}
+    ]
+    actions = [
+        {"completed": mark.casefold() == "x", "text": text.strip()}
+        for mark, text in re.findall(r"^-\s+\[([ xX])\]\s+(.+)$", content, re.MULTILINE)
+    ]
+    return {
+        "kind": kind,
+        "date": meeting_date,
+        "title": title_match.group(1).strip() if title_match else filename,
+        "path": path,
+        "url": url,
+        "topics": topics,
+        "actions": actions,
+    }
+
+
+def fetch_meeting_documents(repository: str, directory: str) -> list[dict[str, Any]]:
+    """Fetch and parse Markdown meeting documents from one repository directory."""
+    entries = run_gh(["api", f"repos/{repository}/contents/{directory}"])
+    documents = []
+    for entry in entries:
+        if entry["type"] != "file" or not entry["name"].endswith(".md") or entry["name"] == "README.md":
+            continue
+        source = run_gh(["api", f"repos/{repository}/contents/{entry['path']}"])
+        content = base64.b64decode(source["content"]).decode("utf-8")
+        documents.append(parse_meeting_document(content, entry["path"], entry["html_url"], directory))
+    documents.sort(key=lambda item: item["date"] or "", reverse=True)
+    return documents
+
+
+def fetch_meetings(repository: str) -> dict[str, Any]:
+    agendas = fetch_meeting_documents(repository, "Agendas")
+    minutes = fetch_meeting_documents(repository, "Minutes")
+    actions = [
+        {**action, "meeting_date": document["date"], "meeting_url": document["url"]}
+        for document in agendas + minutes
+        for action in document["actions"]
+    ]
+    return {"repository": repository, "agendas": agendas, "minutes": minutes, "actions": actions}
 
 
 def fetch_changed_files(repository: str, number: int) -> list[dict[str, str]]:
@@ -305,10 +360,11 @@ def render_json(
     now: dt.datetime,
     incidental: list[dict[str, Any]] | None = None,
     issues: list[dict[str, Any]] | None = None,
+    meetings: dict[str, Any] | None = None,
 ) -> str:
     """Render the versioned payload consumed by the static web dashboard."""
     payload = {
-        "schema_version": 2,
+        "schema_version": 3,
         "generated_at": now.isoformat(timespec="seconds"),
         "repository": repository,
         "label": label,
@@ -316,6 +372,7 @@ def render_json(
         "incidental_prs": incidental or [],
         "items": items,
         "issues": issues or [],
+        "meetings": meetings or {"repository": None, "agendas": [], "minutes": [], "actions": []},
     }
     return json.dumps(payload, indent=2) + "\n"
 
@@ -325,6 +382,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--repo", default="FreeCAD/FreeCAD")
     parser.add_argument("--label", default="Mod: BIM")
     parser.add_argument("--reviewers", default="tritao,Roy-043")
+    parser.add_argument("--meetings-repo", default="tritao/bim-meeting-notes")
     parser.add_argument(
         "--min-bim-percent",
         type=float,
@@ -350,6 +408,7 @@ def main() -> int:
     try:
         pull_requests = fetch_pull_requests(args.repo, args.label, reviewers_list)
         raw_issues = fetch_issues(args.repo, args.label)
+        meetings = fetch_meetings(args.meetings_repo)
         unreviewed = [pr for pr in pull_requests if needs_review(pr, reviewers)]
         for pr in unreviewed:
             if pr["changedFiles"] >= args.large_pr_files:
@@ -385,7 +444,9 @@ def main() -> int:
             }
             for pr in incidental_prs
         ]
-        report = render_json(items, args.repo, args.label, reviewers_list, now, incidental, issues)
+        report = render_json(
+            items, args.repo, args.label, reviewers_list, now, incidental, issues, meetings
+        )
     else:
         report = render_markdown(items, args.repo, args.label, reviewers_list, now)
 

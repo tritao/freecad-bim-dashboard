@@ -14,6 +14,11 @@ reproduction, unassigned work, and stale candidates. Attachment and
 reproduction indicators are conservative hints derived from the issue form;
 the dashboard does not claim to have reproduced an issue.
 
+The Meetings view reads agendas and minutes from `tritao/bim-meeting-notes`.
+It lists discussion topics and collects Markdown task-list items as follow-up
+actions. Use `--meetings-repo` to point the collector at
+`FreeCAD/BIM-meetings` after the repository moves to the organization.
+
 ## Run locally
 
 The collector requires an authenticated [GitHub CLI](https://cli.github.com/).
