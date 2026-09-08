@@ -13,25 +13,6 @@ from pathlib import Path
 from typing import Any
 
 
-QUERY = r"""
-query($searchQuery: String!, $cursor: String) {
-  search(query: $searchQuery, type: ISSUE, first: 100, after: $cursor) {
-    pageInfo { hasNextPage endCursor }
-    nodes {
-      ... on PullRequest {
-        number title url createdAt updatedAt isDraft additions deletions changedFiles
-        mergeStateStatus
-        author { login }
-        labels(first: 50) { nodes { name } }
-        reviews(first: 100) { totalCount nodes { author { login } } }
-        comments(first: 100) { totalCount nodes { author { login } } }
-      }
-    }
-  }
-}
-"""
-
-
 def run_gh(arguments: list[str]) -> Any:
     """Run an authenticated GitHub CLI request and decode its JSON output."""
     for attempt in range(3):
@@ -53,40 +34,65 @@ def run_gh(arguments: list[str]) -> Any:
     )
 
 
-def fetch_pull_requests(repository: str, label: str) -> list[dict[str, Any]]:
-    """Fetch every open pull request carrying the requested label."""
+def fetch_pages(endpoint: str) -> list[dict[str, Any]]:
+    """Fetch and flatten every REST page for an endpoint."""
+    pages = run_gh(["api", "--paginate", "--slurp", endpoint])
+    return [item for page in pages for item in page]
+
+
+def fetch_pull_requests(
+    repository: str, label: str, reviewers: list[str]
+) -> list[dict[str, Any]]:
+    """Fetch open labeled PRs and adapt REST responses to the report schema."""
     search = f'repo:{repository} is:pr is:open label:"{label}"'
-    cursor = None
-    pull_requests: list[dict[str, Any]] = []
-    while True:
-        arguments = [
-            "api",
-            "graphql",
-            "-f",
-            f"query={QUERY}",
-            "-f",
-            f"searchQuery={search}",
-        ]
-        if cursor:
-            arguments.extend(("-f", f"cursor={cursor}"))
-        data = run_gh(arguments)["data"]["search"]
-        pull_requests.extend(data["nodes"])
-        if not data["pageInfo"]["hasNextPage"]:
-            return pull_requests
-        cursor = data["pageInfo"]["endCursor"]
+    for reviewer in reviewers:
+        search += f" -author:{reviewer} -commenter:{reviewer} -reviewed-by:{reviewer}"
+    results = run_gh(
+        ["api", "--method", "GET", "search/issues", "-f", f"q={search}", "-f", "per_page=100"]
+    )["items"]
+    pull_requests = []
+    for result in results:
+        number = result["number"]
+        detail = run_gh(["api", f"repos/{repository}/pulls/{number}"])
+        reviews = fetch_pages(f"repos/{repository}/pulls/{number}/reviews?per_page=100")
+        comments = fetch_pages(f"repos/{repository}/issues/{number}/comments?per_page=100")
+        pull_requests.append(
+            {
+                "number": number,
+                "title": detail["title"],
+                "url": detail["html_url"],
+                "createdAt": detail["created_at"],
+                "updatedAt": detail["updated_at"],
+                "isDraft": detail["draft"],
+                "additions": detail["additions"],
+                "deletions": detail["deletions"],
+                "changedFiles": detail["changed_files"],
+                "mergeStateStatus": detail["mergeable_state"].upper(),
+                "author": {"login": detail["user"]["login"]} if detail.get("user") else None,
+                "labels": {"nodes": [{"name": item["name"]} for item in detail["labels"]]},
+                "reviews": {
+                    "nodes": [
+                        {"author": {"login": item["user"]["login"]}}
+                        for item in reviews
+                        if item.get("user")
+                    ]
+                },
+                "comments": {
+                    "nodes": [
+                        {"author": {"login": item["user"]["login"]}}
+                        for item in comments
+                        if item.get("user")
+                    ]
+                },
+            }
+        )
+    return pull_requests
 
 
 def fetch_changed_files(repository: str, number: int) -> list[dict[str, str]]:
-    """Fetch file paths separately to keep the main GraphQL query inexpensive."""
-    pages = run_gh(
-        [
-            "api",
-            "--paginate",
-            "--slurp",
-            f"repos/{repository}/pulls/{number}/files?per_page=100",
-        ]
-    )
-    return [{"path": item["filename"]} for page in pages for item in page]
+    """Fetch file paths separately because only large PRs need them."""
+    files = fetch_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")
+    return [{"path": item["filename"]} for item in files]
 
 
 def participant_logins(connection: dict[str, Any]) -> set[str]:
@@ -258,7 +264,7 @@ def main() -> int:
     reviewers = {name.casefold() for name in reviewers_list}
     now = dt.datetime.now(dt.timezone.utc)
     try:
-        pull_requests = fetch_pull_requests(args.repo, args.label)
+        pull_requests = fetch_pull_requests(args.repo, args.label, reviewers_list)
         unreviewed = [pr for pr in pull_requests if needs_review(pr, reviewers)]
         for pr in unreviewed:
             if pr["changedFiles"] >= args.large_pr_files:
