@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open FreeCAD BIM pull requests needing maintainer attention">
+    <title>FreeCAD BIM review queue</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">FreeCAD · BIM maintenance</p>
+        <h1>Pull requests needing a look</h1>
+        <p class="intro">A focused view of open BIM work that has not yet had input from the selected maintainers.</p>
+      </div>
+      <a class="github-link" href="https://github.com/FreeCAD/FreeCAD/pulls?q=is%3Apr+is%3Aopen+label%3A%22Mod%3A+BIM%22">View all on GitHub ↗</a>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Queue summary">
+        <div><strong id="ready-count">—</strong><span>Ready</span></div>
+        <div><strong id="draft-count">—</strong><span>Drafts</span></div>
+        <div><strong id="stale-count">—</strong><span>Stale candidates</span></div>
+        <p id="updated">Loading current queue…</p>
+      </section>
+
+      <section class="controls" aria-label="Queue controls">
+        <div class="tabs" role="group" aria-label="Filter by status">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="ready">Ready</button>
+          <button data-filter="draft">Drafts</button>
+          <button data-filter="stale">Stale</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">Search pull requests</span>
+          <input id="search" type="search" placeholder="Search PRs, authors, labels…">
+        </label>
+      </section>
+
+      <p id="context" class="context"></p>
+      <section id="queue" class="queue" aria-live="polite"></section>
+      <p id="empty" class="empty" hidden>No pull requests match this view.</p>
+      <p id="error" class="error" hidden>Could not load the queue. Try refreshing the page.</p>
+    </main>
+
+    <footer>This is a read-only triage view. Reviews and decisions still happen on GitHub.</footer>
+  </body>
+</html>
